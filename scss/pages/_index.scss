@@ -30,7 +30,7 @@
     .portada-titulo-imagen{
         display: inline-block;
         width: 200px;
-        height: 100px;
+        height: 70px;
         position: relative;
     }
 
@@ -38,7 +38,7 @@
         display: inline-block;
         width: 280px;
         position: relative;
-        font-size: 16px;
+        font-size: calc(14px + 0.25vw);
         font-weight: bold;
         color: white;
         text-align: center;
@@ -48,51 +48,28 @@
 
 /* index portada media screen */
 
-@media screen and (min-width: 480px) {
-
-    .portada-cuadro-texto h1{
-        font-size: calc(20px + 2.5vw);
-        font-weight: bold;
-        color: $color-gris;
-        padding-bottom: 10px;
-    }
-    
-    .portada .portada-cuadro .portada-cuadro-texto p{
-        max-width: 400px;
-        font-size: MIN(calc(11px + 0.6vw), 36px);
-        color: $color-gris;
-        padding: 0 1px 0 0;
-    }
-}
-
 @media screen and (min-width: 768px) {
 
     .portada{
-        height: 500px;
+        height: 550px;
         
         .portada-video{
-            height: 500px;
+            height: 550px;
         }
-    
+
         .portada-titulo{
-            width: 80%;
-            height: 100px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
+
+            .portada-titulo-imagen{
+                width: calc(250px + 1vw);
+            }
+
+            .portada-titulo-h1{
+                font-size: calc(14px + 0.25vw);
+                width: calc(280px + 5vw);
+            }
         }
-    
-        .portada-titulo-imagen{
-            display: inline-block;
-            width: 250px;
-            position: relative;
-        }
-    
-        .portada-titulo-h1{
-            width: 280px;
-            font-size: 16px;
-        }
+
+
     }
 }
 
@@ -101,28 +78,6 @@
     .portada{
         height: 615px;
         grid-template-rows: 615px;
-
-        .portada-cuadro{
-            padding-right: 30px;
-
-            .portada-cuadro-texto{
-            width: 72%;
-            max-width: 680px;
-            border: 4px $color-gris solid;
-            padding: 40px;
-
-                & h1{
-                    max-width: 550px;
-                    font-size: MIN(calc(20px + 2vw), 52.25px);
-                    margin: 15px 0px;
-                }
-
-                & p{
-                    max-width: 650px;
-                    font-size: MIN(calc(12px + 0.75vw), 22px);
-                }
-            } 
-        }
     }
 }
 

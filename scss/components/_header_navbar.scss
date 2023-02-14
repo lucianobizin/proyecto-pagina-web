@@ -1,0 +1,187 @@
+/* === Header === */
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10vh;
+    grid-template-areas: "imagen nombre boton";
+    background-color: $color-amarillo;
+
+    .header-logo{
+        width: 100%;
+
+        .header-logo-img {
+            display: grid;
+            grid-area: imagen;
+            height: 100%;
+            width: 100%;
+            object-fit:contain;
+            padding: 12px;
+        }
+    }
+
+    & h1 {
+        width: 100%;
+        grid-area: nombre;
+        font-size: calc(12px + 0.3vw);
+        color: #404040;
+        padding: calc(12px - 0.5vw);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boton-header{
+        height: 10vh;
+        grid-area: boton;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        & input {
+            opacity: 0;
+            pointer-events: none;
+            touch-action: none;
+            display: none;
+        }
+    
+        & label{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            .logo-menu{
+                width:80%;
+                height: 80%;
+                object-fit: cover;
+                padding: 5px;
+            }
+        }
+
+        .menu-desplegable{
+            background-color: $color-amarillo;
+            height: 500px;
+            width: 100vw;
+            display: none;
+            top: 10vh;
+            position: absolute;
+            flex-direction: column;
+            align-items: center;
+            padding: MIN(10vh, 100px) 0px;
+            left: -80vw;
+
+            .menu-desplegable-texto{
+                font-size: calc(12px + 0.3vw);
+                font-weight: 600;
+                color: #404040da;
+                width: 200px;
+                text-align: center;
+            }
+        }
+        
+        input:checked ~ .menu-desplegable {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            z-index: 2;
+
+            .menu-desplegable-texto:hover{
+                font-weight: bold;
+            }    
+        }
+            
+
+
+    }
+}
+
+/* header media screen */
+
+@media screen and (min-width: 480px) {
+
+    header {
+
+        & h1 {
+            font-size: calc(12px + 0.6vw);
+        }
+
+        .boton-header{
+
+            input:checked ~ .menu-desplegable {
+                gap: 5px;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        grid-template-rows: 10vh;
+
+        & h1 {
+            font-size: calc(16px + 0.25vw);
+            color: #404040;
+            padding: calc(12px - 0.5vw);
+        }
+
+        .boton-header{
+            height: 10vh;
+
+            .menu-desplegable{
+                height: 440px;
+                width: 95vw;
+                left: -78vw;
+                row-gap: MIN(15vh, 100px);
+                padding: MIN(5vh, 100px);
+                top: 15vh;
+
+                .menu-desplegable-texto{
+                    font-size: calc(18px + 0.25vw);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    header{
+
+        grid-template-rows: 15vh;
+
+        .header-logo{
+
+            .header-logo-img{
+                width: 100%;
+                height: 100%;
+                justify-items: center;
+                padding: 15px 10px 22px 10px;
+            }
+        }
+
+        .boton-header{
+            height: 15vh;
+
+            & label{
+
+                .logo-menu{
+                    width:100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: relative;
+                    bottom: 2.5px;
+                    padding: 10px;
+                }
+            }
+
+            .menu-desplegable{
+                height: 615px;
+            }
+        }
+    }
+}
+

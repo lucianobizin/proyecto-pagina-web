@@ -1,0 +1,1908 @@
+/* === Servicios === */
+
+  /* ___ Primera sección o portada___ */
+
+.servicios-portada{
+    width: 100%;
+    height: 750px;
+    background-color: $color-amarillo;
+
+    .servicios-portada-imagen{
+        width:100%;
+        height: 370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img{
+            width: 85%;
+            height: 85%;
+            object-fit: contain;
+        }
+    }
+
+    .servicios-portada-cuadro{
+        width:100%;
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .servicios-portada-cuadro-texto{
+            width: 92%;
+            max-width: 430px;
+            border: 4px $color-gris solid;
+            padding: 20px;
+
+            & h1{
+                font-size: MIN(calc(20px + 2.5vw), 28.5px);
+                font-weight: bold;
+                color: $color-gris;
+                padding-bottom: 10px;
+            }
+
+            & p{
+                font-size: MIN(calc(12px + 0.8vw), 16px);
+                color: $color-gris;
+            }
+        }
+    }
+}
+
+/* servicios portada media screen */
+
+@media screen and (min-width: 768px) {
+
+    .servicios-portada{
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 500px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+
+        .servicios-portada-imagen{
+            width:70%;
+            height: 70%;
+            object-fit: contain;
+        }
+
+        .servicios-portada-cuadro {
+            width:100%;
+            height: 85%;
+
+            .servicios-portada-cuadro-texto{
+                width: 85%;
+                max-width: 390px;
+                padding: 20px;
+
+                & h1{
+                    font-size: MIN(calc(18px + 2vw), 35.5px);
+                }
+
+                & p{
+                    font-size: MIN(calc(12px + 0.5vw), 16.5px);
+                    padding: 0 1px 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .servicios-portada{
+        height: 615px;
+        grid-template-rows: 615px;
+
+        .servicios-portada-imagen{
+            width: 85%;
+            height: 85%;
+            object-fit: contain;
+            position: relative;
+            bottom: 20px;
+        }
+
+        .servicios-portada-cuadro{
+            padding-right: 40px;
+            position: relative;
+            bottom: 20px;
+
+            .servicios-portada-cuadro-texto{
+                width: 78%;
+                max-width: 700px;
+                max-height: 600px;
+                border: 4px $color-gris solid;
+                padding: 40px;
+    
+                & h1{
+                    font-size: MIN(calc(20px + 1.6vw), 45px);
+                    margin: 15px 0px;
+                }
+    
+                & p{
+                    font-size: MIN(calc(12px + 0.7vw), 22.6px);
+                }
+            }
+        }
+    }
+}
+
+  /* ___ Segunda sección ___ */
+
+.servicios-seccion-2{
+    width: 100%;
+    height: 1650px;
+
+    .servicios-seccion-2-introduccion{
+        width: 100%;
+        height: calc(520px - 2.5vw);
+    
+        background-color: $color-gris-claro;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        padding: calc(50px + 2.5vw) 20px calc(50px + 2.5vw) 30px;
+
+        .servicios-seccion-2-linea-amarilla-1 {
+            display: inline-block;
+            width:100px;
+            height: 6px;
+            margin-bottom: 20px;
+            position: relative;
+            left: -30px;
+            top: -10px;
+        }
+        
+        .servicios-seccion-2-introduccion-titulo{
+            font-size: MIN(calc(14px + 2.5vw), 24.6px);
+            font-weight: bold;
+            color: $color-gris;
+            max-width: 374px;
+            padding-bottom: 20px;
+        }
+        
+        .servicios-seccion-2-introduccion-parrafo{
+            font-weight: 400;
+            font-size: 14.8px;
+            color: $color-gris;
+            max-width: 680px;
+        }
+    }
+
+    .servicios-seccion-2-explicacion{
+        width: 100%;
+        height: calc(1100px - 7.5vw);
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(5, $height-servicios-seccion-2-explicaciones);
+        grid-template-areas: "explicacion1 explicacion2" "explicacion3 explicacion4" "explicacion5 explicacion6" "explicacion7 explicacion8" "explicacion9 explicacion10";
+
+        .servicios-seccion-2-explicacion-ingenieria {
+            width: 100%;
+            height: $height-servicios-seccion-2-explicaciones;
+            grid-area: explicacion1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding:10px;
+            margin-top: 10px;
+        }
+        
+        .servicios-seccion-2-explicacion-ml {
+            width: 100%;
+            height: $height-servicios-seccion-2-explicaciones;
+            grid-area: explicacion2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        
+        .servicios-seccion-2-explicacion-datos {
+            width: 100%;
+            height: $height-servicios-seccion-2-explicaciones;
+            grid-area: explicacion3;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-2-explicacion-monitoreo{
+            width: 100%;
+            height: $height-servicios-seccion-2-explicaciones;
+            grid-area: explicacion4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-2-explicacion-comites {
+            width: 100%;
+            height: $height-servicios-seccion-2-explicaciones;
+            grid-area: explicacion5;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-2-explicacion-arquitectura {
+            width: 100%;
+            height: $height-servicios-seccion-2-explicaciones;
+            grid-area: explicacion6;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-2-explicacion-capacitaciones {
+            width: 100%;
+            height: $height-servicios-seccion-2-explicaciones;
+            grid-area: explicacion7;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-2-explicacion-mercado {
+            width: 100%;
+            height: $height-servicios-seccion-2-explicaciones;
+            grid-area: explicacion8;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-2-explicacion-logistica {
+            width: 100%;
+            height: $height-servicios-seccion-2-explicaciones;
+            grid-area: explicacion9;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-2-explicacion-productos {
+            width: 100%;
+            height: $height-servicios-seccion-2-explicaciones;
+            grid-area: explicacion10;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+
+        & h3{
+            font-size: calc(12px + 1.5vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding: 5px 5px 5px 12px;
+        }
+
+        & p {
+            font-size: calc(10px + 1vw);
+            font-weight: 400;
+            color: $color-gris;
+            padding: 5px 5px 5px 12px;
+        }
+    }
+}
+
+/* servicios seccion 2 media screen */
+
+
+@media screen and (min-width: 480px) {
+    .servicios-seccion-2 {
+        height: calc(1460px - 5vw);
+
+        .servicios-seccion-2-introduccion{
+
+            .servicios-seccion-2-introduccion-titulo{
+                font-size: MIN(calc(14px + 2vw), 30px);
+                max-width: 700px;
+            }
+            
+            .servicios-seccion-2-introduccion-parrafo{
+                font-size: calc(10px + 1vw);
+                max-width: 700px;
+            }
+
+        }
+
+
+
+        .servicios-seccion-2-explicacion {
+            height: 900px;
+            grid-template-rows: repeat(5, $height-servicios-seccion-2-explicaciones-480px);
+
+            .servicios-seccion-2-explicacion-ingenieria {
+                height: $height-servicios-seccion-2-explicaciones-480px;
+            }
+            
+            .servicios-seccion-2-explicacion-ml {
+                height: $height-servicios-seccion-2-explicaciones-480px;
+            }
+            
+            .servicios-seccion-2-explicacion-datos {
+                height: $height-servicios-seccion-2-explicaciones-480px;
+            }
+            
+            .servicios-seccion-2-explicacion-monitoreo{
+                height: $height-servicios-seccion-2-explicaciones-480px;
+            }
+            
+            .servicios-seccion-2-explicacion-comites {
+                height: $height-servicios-seccion-2-explicaciones-480px;
+            }
+            
+            .servicios-seccion-2-explicacion-arquitectura {
+                height: $height-servicios-seccion-2-explicaciones-480px;
+            }
+            
+            .servicios-seccion-2-explicacion-capacitaciones {
+                height: $height-servicios-seccion-2-explicaciones-480px;
+            }
+            
+            .servicios-seccion-2-explicacion-mercado {
+                height: $height-servicios-seccion-2-explicaciones-480px;
+            }
+            
+            .servicios-seccion-2-explicacion-logistica {
+                height: $height-servicios-seccion-2-explicaciones-480px;
+            }
+            
+            .servicios-seccion-2-explicacion-productos {
+                height: $height-servicios-seccion-2-explicaciones-480px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .servicios-seccion-2{
+        height: calc(1460px - 15vw);
+
+        .servicios-seccion-2-introduccion{
+            width: 100%;
+            height: calc(500px - 7.5vw);
+            justify-content: center;
+            gap: 30px;
+            padding: calc(50px + 7.5vw) 20px calc(50px + 7.5vw) 30px;
+            // padding: 50px 30px 40px 30px;
+
+            .servicios-seccion-2-introduccion-titulo{
+                font-size: MIN(calc(14px + 2vw), 30px);
+                max-width: 1100px;
+            }
+            
+            .servicios-seccion-2-introduccion-parrafo{
+                font-size: MIN((14.6px + 0.2vw), 20px);
+                max-width: 1100px;
+            }
+        }
+
+        .servicios-seccion-2-explicacion {
+            height: 862px;
+            grid-template-rows: repeat(5, calc(180px - 2vw));
+
+            & h3{
+                font-size: MIN((12px + 1.5vw), 26.3px);
+            }
+
+            & p {
+                font-size: MIN(14.6px + 0.2vw, 20px);
+            }
+
+            .servicios-seccion-2-explicacion-ingenieria {
+                padding:30px;
+                margin-top: 0px;
+            }
+            
+            .servicios-seccion-2-explicacion-ml {
+                padding: 30px;
+                margin-top: 0px;
+            }
+            
+            .servicios-seccion-2-explicacion-datos {
+                padding: 30px;
+            }
+            
+            .servicios-seccion-2-explicacion-monitoreo{
+                padding: 30px;
+            }
+            
+            .servicios-seccion-2-explicacion-comites {
+                padding: 30px;
+            }
+            
+            .servicios-seccion-2-explicacion-arquitectura {
+                padding: 30px;
+            }
+            
+            .servicios-seccion-2-explicacion-capacitaciones {
+                padding: 30px;
+            }
+            
+            .servicios-seccion-2-explicacion-mercado {
+                padding: 30px;
+            }
+            
+            .servicios-seccion-2-explicacion-logistica {
+                padding: 30px;
+            }
+            
+            .servicios-seccion-2-explicacion-productos {
+                padding: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .servicios-seccion-2{
+        height: calc(1030px - 2vw);
+
+        .servicios-seccion-2-introduccion{
+            height: 425px;
+            gap: 20px;
+
+            .servicios-seccion-2-linea-amarilla-1 {
+                width:125px;
+            }
+
+            .servicios-seccion-2-introduccion-titulo{
+                font-size: calc(14px + 1.5vw);
+                max-width: 1900px;
+                margin-left: 50px;
+            }
+            
+            .servicios-seccion-2-introduccion-parrafo{
+                font-size: calc(10px + 0.55vw);
+                margin-left: 50px;
+                max-width: 1900px;
+            }
+        }
+
+        .servicios-seccion-2-explicacion{
+            height: 550px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            grid-template-columns: repeat(5, 20%);
+            grid-template-rows: repeat(2, $height-servicios-seccion-2-explicaciones-1200px);
+            grid-template-areas: "explicacion1 explicacion2 explicacion3 explicacion4 explicacion5" "explicacion6 explicacion7 explicacion8 explicacion9 explicacion10";
+            
+            & h3 {
+                font-size: calc(14px + 0.9vw);
+            }
+        
+            & p {
+                font-size: calc(10px + 0.5vw);
+            }
+
+            .servicios-seccion-2-explicacion-ingenieria {
+                width: 100%;
+                height: $height-servicios-seccion-2-explicaciones-1200px;
+                grid-area: explicacion1;
+            }
+            
+            .servicios-seccion-2-explicacion-ml {
+                width: 100%;
+                height: $height-servicios-seccion-2-explicaciones-1200px;
+                grid-area: explicacion2;
+            }
+            
+            .servicios-seccion-2-explicacion-datos {
+                width: 100%;
+                height: $height-servicios-seccion-2-explicaciones-1200px;
+                grid-area: explicacion3;
+            }
+            
+            .servicios-seccion-2-explicacion-monitoreo{
+                width: 100%;
+                height: $height-servicios-seccion-2-explicaciones-1200px;
+                grid-area: explicacion4;
+            }
+            
+            .servicios-seccion-2-explicacion-comites {
+                width: 100%;
+                height: $height-servicios-seccion-2-explicaciones-1200px;
+                grid-area: explicacion5;
+            }
+            
+            .servicios-seccion-2-explicacion-comites p {
+                font-size: calc(10px + 0.5vw);
+            }
+            
+            .servicios-seccion-2-explicacion-arquitectura {
+                width: 100%;
+                height: $height-servicios-seccion-2-explicaciones-1200px;
+                grid-area: explicacion6;
+            }
+            
+            .servicios-seccion-2-explicacion-capacitaciones {
+                width: 100%;
+                height: $height-servicios-seccion-2-explicaciones-1200px;
+                grid-area: explicacion7;
+            }
+            
+            .servicios-seccion-2-explicacion-mercado {
+                width: 100%;
+                height: $height-servicios-seccion-2-explicaciones-1200px;
+                grid-area: explicacion8;
+            }
+            
+            .servicios-seccion-2-explicacion-logistica {
+                width: 100%;
+                height: $height-servicios-seccion-2-explicaciones-1200px;
+                grid-area: explicacion9;
+            }
+            
+            .servicios-seccion-2-explicacion-productos {
+                width: 100%;
+                height: $height-servicios-seccion-2-explicaciones-1200px;
+                grid-area: explicacion10;
+            }
+        }
+    }
+}
+
+  /* ___ Tercera sección ___ */
+
+.servicios-seccion-3{
+    width: 100%;
+    height: calc(1430px - 30vw);
+
+    .servicios-seccion-3-introduccion{
+        width: 100%;
+        height: 450px;
+    
+        background-color: $color-amarillo;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        padding: 10px;
+
+        .servicios-seccion-3-introduccion-cuadro{
+            width: 90%;
+            max-width: 345px;
+            height: 350px;
+            border-color: $color-gris;
+            border-style: solid;
+            border-width: 4px;
+            padding: 20px;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            .servicios-seccion-3-introduccion-titulo{
+                font-size: MIN(calc(14px + 2.5vw), 22.6px);
+                font-weight: bold;
+                color: $color-gris;
+            }
+
+            .servicios-seccion-3-introduccion-parrafo{
+                font-weight: 400;
+                font-size: 14.8px;
+                color: $color-gris;
+            }
+        }
+        
+    }
+
+    .servicios-seccion-3-explicacion{
+        width: 100%;
+        height: calc(920px - 30vw);
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, calc(230px - 7.5vw));
+        grid-template-areas: "explicacion1 explicacion2" "explicacion3 explicacion4" "explicacion5 explicacion6" "explicacion7 explicacion8";
+
+        & h3 {
+            font-size: calc(12px + 1.5vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding: 5px 5px 5px 12px;
+        }
+
+        & p {
+            font-size: calc(10px + 1vw);
+            font-weight: 400;
+            color: $color-gris;
+            padding: 5px 5px 5px 12px;
+        }
+
+        .servicios-seccion-3-explicacion-estrategico {
+            width: 100%;
+            height: 230px;
+            grid-area: explicacion1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding:10px;
+        }
+        
+        .servicios-seccion-3-explicacion-bi {
+            width: 100%;
+            height: 230px;
+            grid-area: explicacion2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-3-explicacion-genero {
+            width: 100%;
+            height: 230px;
+            grid-area: explicacion3;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-3-explicacion-monitoreo{
+            width: 100%;
+            height: 230px;
+            grid-area: explicacion4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-3-explicacion-seguridad {
+            width: 100%;
+            height: 230px;
+            grid-area: explicacion5;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-3-explicacion-accesibilidad {
+            width: 100%;
+            height: 230px;
+            grid-area: explicacion6;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-3-explicacion-innovacion {
+            width: 100%;
+            height: 230px;
+            grid-area: explicacion7;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-3-explicacion-informes {
+            width: 100%;
+            height: 230px;
+            grid-area: explicacion8;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+    }
+}
+
+/* servicios seccion 3 media screen */
+
+@media screen and (min-width: 480px) {
+
+    .servicios-seccion-3{
+        width: 100%;
+        height: 1280px;
+
+        .servicios-seccion-3-introduccion{
+
+            .servicios-seccion-3-introduccion-cuadro{
+                max-width: 450px;
+    
+                .servicios-seccion-3-introduccion-titulo{
+                    font-size: MIN(calc(14px + 2vw), 30px);
+                    font-weight: bold;
+                    color: $color-gris;
+                }
+    
+                .servicios-seccion-3-introduccion-parrafo{
+                    font-weight: 400;
+                    font-size: calc(10px + 1vw);
+                    color: $color-gris;
+                }
+            }
+        }
+
+        .servicios-seccion-3-explicacion{
+            width: 100%;
+            height: 760px;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(4, 190px);
+            grid-template-areas: "explicacion1 explicacion2" "explicacion3 explicacion4" "explicacion5 explicacion6" "explicacion7 explicacion8";
+
+            .servicios-seccion-3-explicacion-estrategico {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-bi {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-genero {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-monitoreo{
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-seguridad {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-accesibilidad {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-innovacion {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-informes {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .servicios-seccion-3{
+        width: 100%;
+        height: 1280px;
+
+        .servicios-seccion-3-introduccion{
+            width: 100%;
+            height: 450px;
+        
+            background-color: $color-amarillo;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            padding: 10px;
+
+            .servicios-seccion-3-introduccion-cuadro{
+                width: 90%;
+                max-width: 500px;
+                height: 350px;
+                border-color: $color-gris;
+                border-style: solid;
+                border-width: 4px;
+                padding: 20px;
+            
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+
+                .servicios-seccion-3-introduccion-titulo{
+                    font-size: MIN(calc(14px + 2vw), 30px);
+                    font-weight: bold;
+                    color: $color-gris;
+                    padding-bottom: 20px;
+                }
+
+                .servicios-seccion-3-introduccion-parrafo{
+                    font-weight: 400;
+                    font-size: MIN((14.6px + 0.2vw), 20px);
+                    color: $color-gris;
+                }
+            }
+        }
+
+        .servicios-seccion-3-explicacion{
+            width: 100%;
+            height: 760px;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(4, 190px);
+            grid-template-areas: "explicacion1 explicacion2" "explicacion3 explicacion4" "explicacion5 explicacion6" "explicacion7 explicacion8";
+
+            & h3{
+                font-size: MIN((12px + 1.5vw), 26.3px);
+            }
+        
+            & p {
+                font-size: MIN((14.6px + 0.2vw), 20px);
+            }
+
+            .servicios-seccion-3-explicacion-estrategico {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-bi {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-genero {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-seguridad {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-accesibilidad {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-innovacion {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+            
+            .servicios-seccion-3-explicacion-informes {
+                height: $height-servicios-seccion-3-explicaciones;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .servicios-seccion-3{
+        width: 100%;
+        height: 760px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(2, 380px);
+        grid-template-areas: "introduccion explicacion";
+
+        .servicios-seccion-3-introduccion{
+            width: 100%;
+            height: 760px;
+    
+            grid-area: introduccion;
+        
+            padding: 10px;
+
+            .servicios-seccion-3-introduccion-cuadro{
+                width: 80%;
+                height: 50%;
+                max-width: 760px;
+                padding: 18px;
+
+                .servicios-seccion-3-introduccion-titulo{
+                    font-size: MIN(calc(14px + 1.5vw), 42.6px);
+                }
+
+                .servicios-seccion-3-introduccion-parrafo{
+                    font-size: MIN(calc(10px + 0.55vw), 20.49px);
+                }
+            }
+        }
+
+        .servicios-seccion-3-explicacion{
+            width: 100%;
+            height: 760px;
+            margin-top: 10px;
+    
+            grid-area: explicacion;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat (4, $height-servicios-seccion-3-explicaciones-1200px);
+
+            & h3 {
+                font-size: calc(14px + 0.9vw);
+            }
+        
+            & p {
+                font-size: calc(10px + 0.5vw);
+            }
+
+            .servicios-seccion-3-explicacion-estrategico {
+                width: 100%;
+                height: $height-servicios-seccion-3-explicaciones-1200px;
+                margin-top: 10px;
+            }
+            
+        
+            
+            .servicios-seccion-3-explicacion-bi {
+                width: 100%;
+                height: $height-servicios-seccion-3-explicaciones-1200px;
+                margin-top: 10px;
+            }
+            
+            .servicios-seccion-3-explicacion-genero {
+                width: 25vw;
+                height: $height-servicios-seccion-3-explicaciones-1200px;
+            }
+            
+            .servicios-seccion-3-explicacion-monitoreo{
+                width: 100%;
+                height: $height-servicios-seccion-3-explicaciones-1200px;
+            }
+            
+            .servicios-seccion-3-explicacion-seguridad {
+                width: 100%;
+                height: $height-servicios-seccion-3-explicaciones-1200px;
+            }
+            
+            .servicios-seccion-3-explicacion-accesibilidad {
+                width: 100%;
+                height: $height-servicios-seccion-3-explicaciones-1200px;
+            }
+            
+            .servicios-seccion-3-explicacion-innovacion {
+                width: 100%;
+                height: $height-servicios-seccion-3-explicaciones-1200px;
+            }
+            
+            .servicios-seccion-3-explicacion-informes {
+                width: 100%;
+                height: $height-servicios-seccion-3-explicaciones-1200px;
+            }
+        }
+    }
+}
+
+  /* ___ Cuarta sección ___ */
+
+.servicios-seccion-4{
+    width: 100%;
+    height: calc(1820px - 7.5vw);
+
+    .servicios-seccion-4-introduccion{
+        width: 100%;
+        height: 450px;
+    
+        background-color: $color-gris-claro;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        padding: 10px;
+
+        .servicios-seccion-4-introduccion-cuadro{
+            width: 90%;
+            height: 350px;
+            border-color: $color-gris;
+            border-style: solid;
+            border-width: 4px;
+            padding: 20px;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .servicios-seccion-4-introduccion-titulo{
+                font-size: MIN(calc(14px + 2.5vw), 22.6px);
+                font-weight: bold;
+                color: $color-gris;
+                padding-bottom: 20px;
+            }
+
+            .servicios-seccion-4-introduccion-parrafo{
+                font-weight: 400;
+                font-size: 14.8px;
+                color: $color-gris;
+            }
+        }
+    }
+
+    .servicios-seccion-4-explicacion{
+        width: 100%;
+        height: calc(1320px - 30vw);
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat (6, calc($height-servicios-seccion-4-explicaciones - 2vw));
+        grid-template-areas: "explicacion1 explicacion2" "explicacion3 explicacion4" "explicacion5 explicacion6" "explicacion7 explicacion8" "explicacion9 explicacion10" "explicacion11 explicacion12";
+
+        & h3 {
+            font-size: calc(12px + 1.5vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding: 5px 5px 5px 12px;
+        }
+
+        & p {
+            font-size: calc(10px + 1vw);
+            font-weight: 400;
+            color: $color-gris;
+            padding: 5px 5px 5px 12px;
+        }
+
+        .servicios-seccion-4-explicacion-marca {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding:10px;
+        }
+        
+        .servicios-seccion-4-explicacion-redes {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-4-explicacion-web {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion3;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-4-explicacion-branding {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-4-explicacion-medios {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion5;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-4-explicacion-media {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion6;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-4-explicacion-publicidad {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion7;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-4-explicacion-influencer {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion8;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-4-explicacion-inbound {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion9;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-4-explicacion-experiencia {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion10;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-4-explicacion-manual {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion11;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-4-explicacion-eventos {
+            width: 100%;
+            height: $height-servicios-seccion-4-explicaciones;
+            grid-area: explicacion12;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+    }
+}
+
+/* servicios seccion 4 media screen */
+
+@media screen and (min-width: 480px) {
+    .servicios-seccion-4{
+        height: 1720px;
+
+        .servicios-seccion-4-introduccion{
+
+            .servicios-seccion-4-introduccion-cuadro{
+                max-width: 450px;
+    
+                .servicios-seccion-4-introduccion-titulo{
+                    font-size: MIN(calc(14px + 2vw), 30px);
+                }
+            
+                .servicios-seccion-4-introduccion-parrafo{
+                    font-size: calc(10px + 1vw);
+                }
+        }
+
+        }
+
+        .servicios-seccion-4-explicacion{
+            height: 1220px;
+            margin-top: 45px;
+            align-content: space-around;
+            grid-template-rows: repeat (6, 220px);
+
+            .servicios-seccion-4-explicacion-marca {
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+            
+            .servicios-seccion-4-explicacion-redes {
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+            
+            .servicios-seccion-4-explicacion-web {
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+            
+            .servicios-seccion-4-explicacion-branding{
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+            
+            .servicios-seccion-4-explicacion-medios {
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+        
+            .servicios-seccion-4-explicacion-media {
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+            
+            .servicios-seccion-4-explicacion-publicidad {
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+            
+            .servicios-seccion-4-explicacion-influencer {
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+            
+            .servicios-seccion-4-explicacion-inbound {
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+        
+            .servicios-seccion-4-explicacion-experiencia {
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+            
+            .servicios-seccion-4-explicacion-manual {
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+            
+            .servicios-seccion-4-explicacion-eventos {
+                height: $height-servicios-seccion-4-explicaciones-480px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .servicios-seccion-4{
+        height: 1500px;
+
+        .servicios-seccion-4-introduccion{
+
+            .servicios-seccion-4-introduccion-cuadro{
+                max-width: 500px;
+    
+                .servicios-seccion-4-introduccion-titulo{
+                    font-size: MIN(calc(14px + 2vw), 30px);
+                }
+            
+                .servicios-seccion-4-introduccion-parrafo{
+                    font-size: MIN((14.6px + 0.2vw), 20px)
+                }
+            }
+
+
+        }
+
+        .servicios-seccion-4-explicacion{
+            height: 1000px;
+            margin-top: 25px;
+            align-content: space-around;
+
+            & h3{
+                font-size: min(12px + 1.5vw, 26.3px);
+            }
+        
+            & p {
+                font-size: min(14.6px + 0.2vw, 20px);
+            }
+
+            .servicios-seccion-4-explicacion-marca {
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+        
+            .servicios-seccion-4-explicacion-redes {
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+            
+            .servicios-seccion-4-explicacion-web {
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+        
+            .servicios-seccion-4-explicacion-branding{
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+            
+            .servicios-seccion-4-explicacion-medios {
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+        
+            .servicios-seccion-4-explicacion-media {
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+            
+            .servicios-seccion-4-explicacion-publicidad {
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+            
+            .servicios-seccion-4-explicacion-influencer {
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+            
+            .servicios-seccion-4-explicacion-inbound {
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+        
+            .servicios-seccion-4-explicacion-experiencia {
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+            
+            .servicios-seccion-4-explicacion-manual {
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+            
+            .servicios-seccion-4-explicacion-eventos {
+                height: $height-servicios-seccion-4-explicaciones-768px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .servicios-seccion-4 {
+        height: 1105px;
+
+        .servicios-seccion-4-introduccion {
+            height: 425px;
+
+            .servicios-seccion-4-introduccion-cuadro{
+                max-width: 760px;
+
+                .servicios-seccion-4-introduccion-titulo{
+                    font-size: MIN(calc(14px + 1.5vw), 42.6px);
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+                
+                .servicios-seccion-4-introduccion-parrafo{
+                    font-size: MIN(calc(10px + 0.55vw), 20.49px);
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+            }
+        }
+
+        .servicios-seccion-4-explicacion{
+            width: 100%;
+            height: 660px;
+            margin-top: 20px;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat (3, $height-servicios-seccion-4-explicaciones-1200px);
+            grid-template-areas: "explicacion1 explicacion2 explicacion3 explicacion4" "explicacion5 explicacion6 explicacion7 explicacion8" "explicacion9 explicacion10 explicacion11 explicacion12";
+
+            & h3 {
+                font-size: calc(14px + 0.9vw);
+            }
+        
+            & p {
+                font-size: calc(10px + 0.5vw);
+            }
+
+            .servicios-seccion-4-explicacion-marca {
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion1;
+            }
+            
+            .servicios-seccion-4-explicacion-redes {
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion2;
+            }
+            
+            .servicios-seccion-4-explicacion-web {
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion3;
+                background-color: $color-gris-claro;
+            }
+        
+            .servicios-seccion-4-explicacion-branding{
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion4;
+                background-color: $color-gris-claro;
+            }
+            
+            .servicios-seccion-4-explicacion-medios {
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion5;
+            }
+            
+            .servicios-seccion-4-explicacion-media {
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion6;
+            }
+            
+            .servicios-seccion-4-explicacion-publicidad {
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion7;
+                background-color: $color-gris-claro;
+            }
+            
+            .servicios-seccion-4-explicacion-influencer {
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion8;
+                background-color: $color-gris-claro;
+            }
+            
+            .servicios-seccion-4-explicacion-inbound {
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion9;
+            }
+            
+            .servicios-seccion-4-explicacion-experiencia {
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion10;
+            }
+        
+            .servicios-seccion-4-explicacion-manual {
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion11;
+                background-color: $color-gris-claro;
+            }
+            
+            .servicios-seccion-4-explicacion-eventos {
+                width: 100%;
+                height: $height-servicios-seccion-4-explicaciones-1200px;
+                grid-area: explicacion12;
+                background-color: $color-gris-claro;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+  /* ___ Quinta sección ___ */
+
+.servicios-seccion-5 {
+    width: 100%;
+    height: calc(1770px - 7.5vw);
+    margin-top: 25px;
+
+    .servicios-seccion-5-introduccion {
+        width: 100%;
+        height: 700px;
+    
+        background-color: $color-amarillo;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+        gap: 30px;
+
+        .servicios-seccion-5-introduccion-titulo {
+            font-size: MIN(calc(14px + 2.5vw), 22.6px);
+            font-weight: bold;
+            color: $color-gris;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        
+        .servicios-seccion-5-introduccion-imagen{
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 40px;
+            position: relative;
+            left:-43vw;
+        }
+        
+        .servicios-seccion-5-introduccion-parrafo1 {
+            font-weight: 500;
+            font-size: 14.8px;
+            color: $color-gris;
+        }
+        
+        .servicios-seccion-5-introduccion-parrafo2 {
+            font-weight: 500;
+            font-size: 14px;
+            color: $color-gris;
+        }
+    }
+
+    .servicios-seccion-5-explicacion {
+        width: 100%;
+        height: calc(1000px - 7.5vw);
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(5, calc($height-servicios-seccion-5-explicaciones - 2vw));
+        grid-template-areas: "explicacion1 explicacion2" "explicacion3 explicacion4" "explicacion5 explicacion6" "explicacion7 explicacion8" "explicacion9 explicacion10";
+
+        & h3 {
+            font-size: calc(12px + 1.5vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding: 5px 5px 5px 12px;
+        }
+
+        & p {
+            font-size: calc(10px + 1vw);
+            font-weight: 400;
+            color: $color-gris;
+            padding: 5px 5px 5px 12px;
+        }
+
+        .servicios-seccion-5-explicacion-desarrollo {
+            width: 100%;
+            height: $height-servicios-seccion-5-explicaciones;
+            grid-area: explicacion1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding:10px;
+        }
+        
+        .servicios-seccion-5-explicacion-estrategia {
+            width: 100%;
+            height: $height-servicios-seccion-5-explicaciones;
+            grid-area: explicacion2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-5-explicacion-capacitacion {
+            width: 100%;
+            height: $height-servicios-seccion-5-explicaciones;
+            grid-area: explicacion3;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-5-explicacion-monitoreo {
+            width: 100%;
+            height: $height-servicios-seccion-5-explicaciones;
+            grid-area: explicacion4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-5-explicacion-etica {
+            width: 100%;
+            height: $height-servicios-seccion-5-explicaciones;
+            grid-area: explicacion5;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-5-explicacion-certificaciones {
+            width: 100%;
+            height: $height-servicios-seccion-5-explicaciones;
+            grid-area: explicacion6;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-5-explicacion-residuos {
+            width: 100%;
+            height: $height-servicios-seccion-5-explicaciones;
+            grid-area: explicacion7;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-5-explicacion-circular {
+            width: 100%;
+            height: $height-servicios-seccion-5-explicaciones;
+            grid-area: explicacion8;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-5-explicacion-alianzas {
+            width: 100%;
+            height: $height-servicios-seccion-5-explicaciones;
+            grid-area: explicacion9;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .servicios-seccion-5-explicacion-impacto {
+            width: 100%;
+            height: $height-servicios-seccion-5-explicaciones;
+            grid-area: explicacion10;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+    }
+}
+
+
+/* servicios seccion 5 media screen */
+
+@media screen and (min-width: 480px) {
+
+    .servicios-seccion-5{
+        height: 1680px;
+
+        .servicios-seccion-5-introduccion {
+
+            .servicios-seccion-5-introduccion-titulo {
+                font-size: MIN(calc(14px + 2vw), 30px);
+            }
+        
+            .servicios-seccion-5-introduccion-parrafo1{
+                font-size: calc(10px + 1vw);
+            }
+            
+            .servicios-seccion-5-introduccion-parrafo2{
+                font-size: calc(10px + 1vw);
+            }
+        }
+
+        .servicios-seccion-5-explicacion{
+            height: 900px;
+            margin-top: 40px;
+            align-content: space-around;
+            grid-template-rows: repeat(5, 170px);
+            
+            .servicios-seccion-5-explicacion-desarrollo {
+                height: $height-servicios-seccion-5-explicaciones-480px;
+            }
+            
+            .servicios-seccion-5-explicacion-estrategia {
+                height: $height-servicios-seccion-5-explicaciones-480px;
+            }
+            
+            .servicios-seccion-5-explicacion-capacitacion {
+                height: $height-servicios-seccion-5-explicaciones-480px;
+            }
+            
+            .servicios-seccion-5-explicacion-monitoreo{
+                height: $height-servicios-seccion-5-explicaciones-480px;
+            }
+            
+            .servicios-seccion-5-explicacion-etica {
+                height: $height-servicios-seccion-5-explicaciones-480px;
+            }
+        
+            .servicios-seccion-5-explicacion-certificaciones {
+                height: $height-servicios-seccion-5-explicaciones-480px;
+            }
+            
+            .servicios-seccion-5-explicacion-residuos {
+                height: $height-servicios-seccion-5-explicaciones-480px;
+            }
+            
+            .servicios-seccion-5-explicacion-circular {
+                height: $height-servicios-seccion-5-explicaciones-480px;
+            }
+            
+            .servicios-seccion-5-explicacion-alianzas {
+                height: $height-servicios-seccion-5-explicaciones-480px;
+            }
+        
+            .servicios-seccion-5-explicacion-impacto {
+                height: $height-servicios-seccion-5-explicaciones-480px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .servicios-seccion-5{
+        height: 1750px;
+
+        .servicios-seccion-5-introduccion {
+
+            .servicios-seccion-5-introduccion-titulo {
+                font-size: MIN(calc(14px + 2vw), 30px);
+            }
+        
+            .servicios-seccion-5-introduccion-parrafo1{
+                font-size: MIN((14.6px + 0.3vw), 20px);
+            }
+            
+            .servicios-seccion-5-introduccion-parrafo2{
+                font-size: MIN((14.6px + 0.3vw), 20px);
+            }
+        }
+
+        .servicios-seccion-5-explicacion{
+            height: 1000px;
+            margin-top: 40px;
+            
+            & h3{
+                font-size: MIN(12px + 1.5vw, 26.3px);
+            }
+        
+            & p{
+                font-size: MIN(14.6px + 0.2vw, 20px);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .servicios-seccion-5 {
+        height: 950px;
+
+        .servicios-seccion-5-introduccion {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 100px 70px 70px;
+            grid-template-areas: "imagen titulo" "imagen texto1" "imagen texto2";
+
+            .servicios-seccion-5-introduccion-titulo{
+                width: 30vw;
+                height: 50px;
+                font-size: calc(14px + 1.5vw);
+                margin-left: 50px;
+                margin-right: 50px;
+                align-self: center;
+                grid-area: titulo;
+            }
+        
+            .servicios-seccion-5-introduccion-imagen{
+                width: 30vw;
+                left: -8vw;
+                align-self: center;
+                grid-area: imagen;
+            }
+            
+            .servicios-seccion-5-introduccion-parrafo1{
+                font-size: calc(14px + 0.4vw);
+                padding-right: 20px;
+                margin-left: 50px;
+                margin-right: 50px;
+                grid-area: texto1;
+                align-self: center;
+            }
+        
+            .servicios-seccion-5-introduccion-parrafo2{
+                font-size: calc(14px + 0.4vw);
+                padding-right: 20px;
+                margin-left: 50px;
+                margin-right: 50px;
+                grid-area: texto2;
+                align-self: center;
+            }
+        }
+
+        .servicios-seccion-5-explicacion{
+            width: 100%;
+            height: 500px;
+            margin-top: 40px;
+            grid-template-columns: repeat(5, 20%);
+            grid-template-rows: repeat(2, $height-servicios-seccion-5-explicaciones-1200px);
+            grid-template-areas: "explicacion1 explicacion2 explicacion3 explicacion4 explicacion5" "explicacion6 explicacion7 explicacion8 explicacion9 explicacion10";
+
+            & h3 {
+                font-size: calc(14px + 0.9vw);
+            }
+        
+            & p {
+                font-size: calc(10px + 0.5vw);
+            }
+
+            .servicios-seccion-5-explicacion-desarrollo {
+                width: 100%;
+                height: $height-servicios-seccion-5-explicaciones-1200px;
+                grid-area: explicacion1;
+            }
+        
+            .servicios-seccion-5-explicacion-estrategia {
+                width: 100%;
+                height: $height-servicios-seccion-5-explicaciones-1200px;
+                grid-area: explicacion2;
+            }
+            
+            .servicios-seccion-5-explicacion-capacitacion {
+                width: 100%;
+                height: $height-servicios-seccion-5-explicaciones-1200px;
+                grid-area: explicacion3;
+            }
+            
+            .servicios-seccion-5-explicacion-monitoreo{
+                width: 100%;
+                height: $height-servicios-seccion-5-explicaciones-1200px;
+                grid-area: explicacion4;
+            }
+            
+            .servicios-seccion-5-explicacion-etica {
+                width: 100%;
+                height: $height-servicios-seccion-5-explicaciones-1200px;
+                grid-area: explicacion5;
+            }
+            
+            .servicios-seccion-5-explicacion-certificaciones {
+                width: 100%;
+                height: $height-servicios-seccion-5-explicaciones-1200px;
+                grid-area: explicacion6;
+            }
+            
+            .servicios-seccion-5-explicacion-residuos {
+                width: 100%;
+                height: $height-servicios-seccion-5-explicaciones-1200px;
+                grid-area: explicacion7;
+            }
+            
+            .servicios-seccion-5-explicacion-circular {
+                width: 100%;
+                height: $height-servicios-seccion-5-explicaciones-1200px;
+                grid-area: explicacion8;
+            }
+            
+            .servicios-seccion-5-explicacion-alianzas {
+                width: 100%;
+                height: $height-servicios-seccion-5-explicaciones-1200px;
+                grid-area: explicacion9;
+            }
+            
+            .servicios-seccion-5-explicacion-impacto {
+                width: 100%;
+                height: $height-servicios-seccion-5-explicaciones-1200px;
+                grid-area: explicacion10;
+            }
+        }
+    }
+}

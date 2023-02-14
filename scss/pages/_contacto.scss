@@ -1,0 +1,582 @@
+/* === Contacto === */
+
+  /* --- Main --- */
+
+  /* ___ Primera sección o portada___ */
+
+
+  .contacto-portada{
+    width: 100%;
+    height: 740px;
+    background-color: $color-amarillo;
+
+    .contacto-portada-cuadro {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .contacto-portada-cuadro-texto{
+            width: 85%;
+            max-width: 400px;
+            border: 4px $color-gris solid;
+            padding: 20px;
+
+            & h1{
+                font-size: calc(20px + 2.5vw); 
+                font-weight: bold;
+                color: $color-gris;
+                padding-bottom: 10px;
+            }
+
+            & p{
+                font-size: calc(11px + 0.6vw);
+                color: $color-gris;
+                padding: 0 1px 0 0;
+            }
+        }
+        
+    }
+
+    .contacto-portada-imagen{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img{
+            width: 90%;
+            height: 90%;
+            object-fit:contain;
+        }
+    }
+}
+
+/* contacto sección 1 media screen */
+
+@media screen and (min-width: 768px) {
+
+    .contacto-portada{
+        height: 880px;
+
+        .contacto-portada-cuadro {
+            height: 420px;
+
+            .contacto-portada-cuadro-texto{
+                width: calc(80% + 1vw);
+                max-width: 450px;
+                border: 4px $color-gris solid;
+                padding: 20px;
+            }
+        }
+
+        .contacto-portada-imagen img{
+            width: 95%;
+            height: 95%;
+            object-fit:contain;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .contacto-portada{
+        height: 615px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 615px;
+        grid-template-areas: "cuadro imagen";
+
+        .contacto-portada-cuadro {
+            width: 100%;
+            height: 615px;
+            position: relative;
+            left: 30px;
+            bottom: 15px;
+            grid-area: cuadro;
+
+            .contacto-portada-cuadro-texto {
+                width: 85%;
+                max-width: 570px;
+                height: 420px; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                & h1{
+                    font-size: MIN(calc(20px + 2.5vw), 62px);
+                }
+
+                & p{
+                    font-size: MIN(calc(12px + 0.7vw), 22.6px);
+                }
+            }
+        }
+
+        .contacto-portada-imagen{
+            width: 100%;
+            height: 615px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            bottom: 15px;
+            grid-area: imagen;
+
+            & img{
+                width: 80%;
+                height: 80%;
+            }
+        }
+    }
+}
+
+  /* ___ Segunda sección ___ */
+
+.contacto-seccion-2{
+    width: 100%;
+    height: calc(370px - 17vw);
+    background-color: $color-gris-claro;
+    
+    .contacto-seccion-2-titulo {
+        width: 100%;
+        height: 90px;
+        margin-bottom: 10px;
+
+        & h2 {
+            font-size: calc(14px + 1.75vw);
+            color: $color-gris;
+            padding: 40px 20px 10px 20px;
+        }
+    }
+
+    .contacto-seccion-2-linea {
+        width: 100%;
+        height: 25px;
+
+        & hr {
+            width: 30%;
+            height: 10px;
+            background-color: $color-amarillo;
+            border-style: solid;
+            border-width: 4px;
+            border-color: $color-amarillo;
+        }
+    }
+
+    .contacto-seccion-2-trabajo{
+        width: 100%;
+        height: calc(200px - 10vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+
+        .contacto-seccion-2-trabajo-parrafo {
+            height: calc(150px - 10vw);
+            padding: calc(20px - 1vw) 30px 0px 20px;
+
+            & p {
+                font-size: calc(12px + 0.15vw);
+                color: $color-gris;
+            }
+        }
+
+        .contacto-seccion-2-trabajo-strong {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: flex-start;
+            font-size: calc(12px + 1vw);
+            color: $color-gris;
+            font-weight: bold;
+            padding: calc(30px - 1vw) 20px 20px 20px;
+        }
+    }
+}
+
+/* contacto sección 2 media screen */
+
+
+@media screen and (min-width: 768px) {
+
+    .contacto-seccion-2{
+        height: 320px;
+
+        .contacto-seccion-2-titulo {
+            height: 100px;
+
+            & h2 {
+                padding: 40px 20px 10px 20px;
+            }
+        }
+
+        .contacto-seccion-2-linea hr {
+            width: 20%;
+        }
+
+        .contacto-seccion-2-trabajo {
+            height: 100px;
+
+            .contacto-seccion-2-trabajo-parrafo {
+                height: 120px;
+                padding: calc(40px - 1vw) 20px 20px 20px;
+    
+                & p {
+                    max-width: 1100px;
+                    font-size: calc(12px + 0.5vw);
+                    padding-right: 50px;
+                }
+            }
+
+            .contacto-seccion-2-trabajo-strong {
+                height: 100px;
+                padding: calc(10px - 1vw) 20px 20px 20px;
+
+                & p {
+                    font-size: calc(12px + 0.5vw);
+                    color: $color-gris;
+                    padding: calc(30px - 1vw) 20px 20px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .contacto-seccion-2 {
+        width:100%;
+        height: 350px;
+        background-color: $color-gris-claro;
+
+        .contacto-seccion-2-titulo{
+            width: 50%;
+            height: 130px;
+            margin-bottom: 0px;
+            margin-left: 5vw;
+
+            & h2 {
+                font-size: MIN(calc(14px + 1.75vw), 42px);
+                padding-top: 45px;
+                padding-left: 0px;
+            }
+        }
+
+        .contacto-seccion-2-linea {
+            width: 10%;
+            margin-left: 5vw;
+
+            & hr {
+                width: 10vw;
+            }
+        }
+
+        .contacto-seccion-2-trabajo {
+            width: 95%;
+            height: 190px;
+
+            .contacto-seccion-2-trabajo-parrafo {
+                width: 95%;
+                height: 100px;
+                margin-left: 5vw;
+                padding-left: 0px;
+                margin-bottom: 0px;
+
+                & p {
+                    max-width: 1850px;
+                }
+            }
+
+            .contacto-seccion-2-trabajo-strong {
+                width: 55%;
+                height: 100px;
+                margin-left: 5vw;
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+  /* ___ Tercera sección ___ */
+
+.contacto-seccion-3 {
+    width: 100%;
+    height: 940px;
+
+    .contacto-seccion-3-imagen {
+        width: 100%;
+        height: 300px;
+        background-color: $color-gris-claro;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .contacto-seccion-3-formulario {
+        width: 100%;
+        height: 640px;
+        background-color: $color-amarillo;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 40px;
+
+        & h2 {
+            font-size: MIN(calc(14px + 1.75vw), 21px);
+            color: $color-gris;
+            margin-bottom: 30px;
+        }
+
+        .contacto-seccion-3-formulario-partes{
+
+            .contacto-seccion-3-formulario-texto{
+
+                .contacto-seccion-3-formulario-texto-label {
+                    font-size: MIN(calc(12px + 1vw), 16px);
+                    font-weight: 500;
+                    color: $color-gris;
+                    margin-right: 5px;
+                    display: block;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+
+                .contacto-seccion-3-formulario-texto-input {
+                    width: 80vw;
+                    height: 25px;
+                    margin-top: 10px;
+                    border-style: solid;
+                    border-color: $color-amarillo;
+                    padding: 5px;
+                    font-size: 12px;
+                }
+
+                & textarea {
+                    width: 80vw;
+                    border-style: solid;
+                    border-color: $color-amarillo;
+                    padding: 5px;
+                    font-size: 12px;
+                }
+
+                .contacto-seccion-3-formulario-texto-select {
+                    width: 100px;
+                    height: 25px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    border-style: solid;
+                    border-color: $color-amarillo;
+
+                    .contacto-seccion-3-formulario-texto-option {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: $color-gris;
+                    }
+                }
+
+                .contacto-seccion-3-formulario-texto-label-checkbok {
+                    font-size: MIN(calc(12px + 1vw), 16px);
+                    font-weight: 500;
+                    color: $color-gris;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                .contacto-seccion-3-formulario-texto-enviar {
+                    width: 70px;
+                    height: 25px;
+                    background-color: $color-gris;
+                    border-style: solid;
+                    border-color: $color-gris;
+                    color: white;
+                    margin-top: 10px;
+                    margin-right: 10px;
+
+                    &:hover {
+                        background-color: $color-gris;
+                        border-color: $color-gris;
+                        color: $color-amarillo;
+                    }
+                }
+                
+                .contacto-seccion-3-formulario-texto-restablecer {
+                    width: 160px;
+                    height: 25px;
+                    background-color: $color-gris;
+                    border-style: solid;
+                    border-color: $color-gris;
+                    color: white;
+
+                    &:hover {
+                        background-color: $color-gris;
+                        border-color: $color-gris;
+                        color: $color-amarillo;
+                    }
+                }
+                
+
+            }
+        }
+    }
+}
+
+/* contacto sección 3 media screen */
+
+@media screen and (min-width: 768px){
+    .contacto-seccion-3 {
+        height: calc(1030px - 2vw);
+
+        .contacto-seccion-3-imagen {
+            height: calc(450px - 10vw);
+        }
+
+        .contacto-seccion-3-formulario {
+            height: calc(720px - 2vw);
+
+            & h2 {
+                font-size: MIN(calc(14px + 1.75vw), 24px);
+            }
+
+            .contacto-seccion-3-formulario-partes{
+
+                .contacto-seccion-3-formulario-texto {
+                    margin-top: 3px;
+
+                    .contacto-seccion-3-formulario-texto-label {
+                        font-size: MIN(calc(12px + 1vw), 18px);
+                    }
+
+                    .contacto-seccion-3-formulario-texto-input{
+                        font-size: 14px;
+                    }
+
+                    & textarea{
+                        font-size: 14px;
+                    }
+
+                    .contacto-seccion-3-formulario-texto-select{
+                        font-size: 14px;
+
+                        .contacto-seccion-3-formulario-texto-option {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .contacto-seccion-3-formulario-texto-label-checkbok {
+                        font-size: MIN(calc(12px + 1vw), 17px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contacto-seccion-3 {
+        width: 100%;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 800px;
+        grid-template-areas: "foto formulario";
+
+        .contacto-seccion-3-imagen {
+            width: 100%;
+            height: 800px;
+            grid-area: foto;
+        }
+
+        .contacto-seccion-3-formulario {
+            width: 100%;
+            height: 800px;
+            grid-area: formulario;
+            justify-content: space-around;
+
+            & h2 {
+                font-size: MIN(calc(14px + 1.75vw), 24px);
+                margin-bottom: 0px;
+            }
+
+            .contacto-seccion-3-formulario-partes{
+                width: 100%;
+                
+                .contacto-seccion-3-formulario-texto {
+                    margin: 10px 0px;
+
+                    .contacto-seccion-3-formulario-texto-input{
+                        font-size: 16px;
+                    }
+
+                    & textarea {
+                        font-size: 16px;
+                    }
+
+                    .contacto-seccion-3-formulario-texto-label {
+                        width: 80%;
+                        font-size: MIN(calc(12px + 1vw), 20px);
+                    }
+
+                    .contacto-seccion-3-formulario-texto-input {
+                        width: 80%;
+                        height: 40px;
+
+                        &::placeholder{
+                            font-size: 14px;
+                        }
+                    }
+
+                    & textarea {
+                        width: 80%;
+                        padding-top: 10px;
+
+                        &::placeholder{
+                            font-size: 14px;
+                        }
+                    }
+
+                    .contacto-seccion-3-formulario-texto-select {
+                        height: 45px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $color-gris;
+
+                        .contacto-seccion-3-formulario-texto-option {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .contacto-seccion-3-formulario-texto-enviar {
+                        width: 80px;
+                        height: 45px;
+                        font-size: MIN(calc(12px + 1vw), 16px);
+                        font-weight: 500;
+                    }
+
+                    .contacto-seccion-3-formulario-texto-restablecer {
+                        width: 240px;
+                        height: 45px;
+                        font-size: MIN(calc(12px + 1vw), 16px);
+                        font-weight: 500;
+                    }
+
+                    .contacto-seccion-3-formulario-texto-label-checkbok {
+                        font-size: MIN(calc(12px + 1vw), 18px);
+                    }
+                }
+            }
+        }
+    }
+}

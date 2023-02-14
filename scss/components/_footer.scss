@@ -1,0 +1,138 @@
+/* === Footer === */
+
+footer {
+    width: 100%;
+    height: 160px;
+    background-color: $color-gris;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 40px);
+    grid-template-areas: "slogan" "logos" "copyright";
+    padding: 20px 0px;
+
+    .footer-slogan {
+    width: 100%;
+    height: 40px;
+    grid-area: slogan;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & p{
+        display: inline-block;
+        font-size: calc(12px + 0.7vw);
+        font-weight: bold;
+        color: white;
+    }
+    }
+
+    .footer-botones{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        grid-area: logos;
+        gap: calc(20px + 0.25vw);
+
+        & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:35px;
+            height: 35px;
+
+            .footer-icono{
+                width: 30px;
+                height: 30px;
+                opacity: 0.5;
+            }
+
+            .footer-icono:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    .footer-copyright{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        grid-area: copyright;
+
+        & p {
+            font-size: calc(10px + 0.4vw);
+            font-weight: bold;
+            color: white;
+        }
+    }
+}
+
+/* Footer media screen */
+
+@media screen and (min-width: 768px){
+
+    footer{
+        height: 220px;
+        grid-template-rows: repeat(3, 60px);
+        padding: 20px 0px;
+
+        .footer-slogan {
+            height: 70px;
+        }
+
+        .footer-botones{
+            height: 70px;
+            gap: calc(30px + 0.25vw);
+
+            & a {
+                width: calc(50px + 0.2vw);
+                height: calc(50px + 0.1vw);
+
+                .footer-icono{
+                    width: calc(35px + 0.2vw);
+                    height: calc(35px + 0.2vw);
+                }
+            }
+        }
+
+        .footer-copyright {
+            height: 70px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    footer{
+        height: 280px;
+        grid-template-rows: repeat(3, 80px);
+        padding: 20px 0px;
+
+        .footer-slogan {
+            height: 80px;
+        }
+
+        .footer-botones{
+            height: 80px;
+
+            & a {
+                width: calc(80px + 0.2vw);
+                height: calc(80px + 0.1vw);
+
+                .footer-icono{
+                    width: calc(55px + 0.2vw);
+                    height: calc(55px + 0.2vw);
+                }
+            }
+        }
+
+        .footer-copyright {
+            height: 80px;
+        }
+    }
+}

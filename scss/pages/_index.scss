@@ -1,0 +1,1092 @@
+/* === INDEX === */
+
+/* ___ Primera sección o portada ___ */
+
+.portada{
+    width: 100%;
+    height: 750px;
+    background-color: $color-amarillo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .portada-video{
+        width: 100%;
+        height: 750px;
+        object-fit: contain;
+        position: absolute;
+
+        .portada-video-source{
+            width: 100%;
+            height: 750px;
+        }
+    }
+
+    .portada-titulo{
+        width: 80%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .portada-titulo-imagen{
+        display: inline-block;
+        width: 250px;
+        position: relative;
+    }
+
+    .portada-titulo-h1{
+        display: inline-block;
+        width: 280px;
+        position: relative;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+    
+}
+
+/* index portada media screen */
+
+@media screen and (min-width: 480px) {
+
+    .portada-cuadro-texto h1{
+        font-size: calc(20px + 2.5vw);
+        font-weight: bold;
+        color: $color-gris;
+        padding-bottom: 10px;
+    }
+    
+    .portada .portada-cuadro .portada-cuadro-texto p{
+        max-width: 400px;
+        font-size: MIN(calc(11px + 0.6vw), 36px);
+        color: $color-gris;
+        padding: 0 1px 0 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portada{
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 500px;
+
+        justify-content: center;
+        align-content: center;
+
+        justify-items: center;
+        align-items: center;
+
+        .portada-imagen{
+            width:100%;
+            height: 80%;
+
+            & img{
+                padding-top: 20px;
+            }
+        }
+
+        .portada-cuadro {
+            width:100%;
+            height: 80%;
+
+            .portada-cuadro-texto{
+                width: 85%;
+                max-width: 600px;
+                padding: 20px;
+
+                & h1{
+                    font-size: MIN(calc(18px + 2vw), 41px);
+                }
+
+                & p{
+                    max-width: 450px;
+                    font-size: MIN(calc(11px + 0.6vw), 36px);
+                    color: $color-gris;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .portada{
+        height: 615px;
+        grid-template-rows: 615px;
+
+        .portada-cuadro{
+            padding-right: 30px;
+
+            .portada-cuadro-texto{
+            width: 72%;
+            max-width: 680px;
+            border: 4px $color-gris solid;
+            padding: 40px;
+
+                & h1{
+                    max-width: 550px;
+                    font-size: MIN(calc(20px + 2vw), 52.25px);
+                    margin: 15px 0px;
+                }
+
+                & p{
+                    max-width: 650px;
+                    font-size: MIN(calc(12px + 0.75vw), 22px);
+                }
+            } 
+        }
+    }
+}
+
+  /* ___ Segunda sección ___ */
+.seccion-2{
+    width: 100%;
+    height: 1450px;
+
+    .seccion-2-texto{
+        width:100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        padding: 15px 5px 15px 30px;
+
+        & h2{
+            font-size: calc(20px + 3vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .seccion-2-texto-titulo{
+            font-size: calc(12px + 3vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding-bottom: 20px;
+        }
+
+        .seccion-2-texto-titulo{
+            font-size: calc(12px + 3vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding-bottom: 20px;
+        }
+        
+        .seccion-2-texto-copete{
+            font-weight: bold;
+            font-size: calc(10px + 1.5vw);
+            color: $color-gris;
+            padding: 0 0 20px 0;
+        }
+        
+        .seccion-2-texto-parrafos{
+            font-weight: 400;
+            font-size: calc(10px + 1vw);
+            color: $color-gris;
+            padding: 0 0 20px 0;
+        }
+    }
+
+    .seccion-2-imagenes{
+        width: 100%;
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .seccion-2-imagenes-ramiro {
+            width: 100%;
+            height: 45%;
+            object-fit: contain;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        .seccion-2-imagenes-luciano {
+            width: 100%;
+            height: 45%;
+            object-fit: contain;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .seccion-2-imagenes-ramiro-luciano-768px{
+            display: none;
+        }
+    }
+
+    .seccion-2-btns {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 5px 10px 10px 10px;
+
+        .seccion-2-btns-brochure {
+            width: 190px;
+            height: 40px;
+            border: 2px $color-gris solid;
+            background-color: $color-gris;
+            border-radius: 10px;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            transition: 0.5s;
+
+            .seccion-2-btns-brochure-texto {
+                font-size: 14px;
+                font-weight: 300;
+                color: white;
+                transition: 0.5s;
+            }
+
+            &:hover {
+                border: 2px $color-amarillo solid;
+                background-color: $color-amarillo;
+
+                .seccion-2-btns-brochure-texto{
+                    color: $color-gris;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+/* index seccion 2 media screen */
+
+@media screen and (min-width: 480px) {
+
+    .seccion-2-texto-copete{
+        max-width: 680px;
+    }
+
+    .seccion-2-texto-parrafos{
+        max-width: 696px;
+    }
+
+    .seccion-2-btns-brochure {
+        width: 200px;
+        height: 45px;
+    }    
+}
+
+@media screen and (min-width: 768px) {
+    
+    .seccion-2{
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px 100px;
+        grid-template-areas: "texto fotos" "botones botones";
+
+        .seccion-2-texto{
+            width:100%;
+            height: 400px;
+            grid-area: texto;
+            padding-left: 40px;
+            justify-content: flex-start;
+            padding-bottom: 20px;
+
+            & h2{
+                font-size: calc(20px + 1.5vw);
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .seccion-2-texto-titulo{
+                font-size: calc(12px + 1.5vw);
+                padding-bottom: 20px;
+            }
+            
+            .seccion-2-texto-copete{
+                font-size: calc(10px + 0.75vw);
+                padding: 0 0 20px 0;
+            }
+            
+            .seccion-2-texto-parrafos{
+                font-weight: 400;
+                font-size: calc(10px + 0.5vw);
+                padding: 0 0 20px 0;
+            }
+        }
+
+        .seccion-2-imagenes{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            grid-area: fotos;
+
+            .seccion-2-imagenes-ramiro {
+                display: none;
+            }
+
+            .seccion-2-imagenes-luciano {
+                display: none;
+            }
+
+            .seccion-2-imagenes-ramiro-luciano-768px{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .seccion-2-btns {
+            grid-area: botones;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            padding: 40px;
+
+            .seccion-2-btns-brochure {
+                height: 40px;
+                width: 180px;
+
+                .seccion-2-btns-brochure-texto{
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .seccion-2 {
+        width: 100%;
+        height: 750px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 600px 150px;
+        grid-template-areas: "texto fotos" "botones botones";
+        margin-top: 50px;
+
+        .seccion-2-texto{
+            width:100%;
+            height: 600px;
+            grid-area: texto;
+            padding-left: 40px;
+            justify-content: space-evenly;
+
+            & h2{
+                font-size: MIN(calc(18px + 2vw), 58px);
+                padding-top: 20px;
+                margin-bottom: 20px;
+                max-width: 760px;
+            }
+
+            .seccion-2-texto-titulo{
+                font-size: MIN(calc(16px + 1.40vw), 44px);
+                margin-bottom: 20px;
+                max-width: 760px;
+            }
+            
+            .seccion-2-texto-copete{
+                font-size: MIN(calc(15px + 0.75vw), 26.5px);
+                margin-bottom: 20px;
+                max-width: 760px;
+            }
+            
+            .seccion-2-texto-parrafos{
+                font-size: MIN(calc(12px + 0.5vw), 22px);
+                max-width: 696px;
+            }
+        }
+
+        .seccion-2-imagenes {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            grid-area: fotos;
+
+            .seccion-2-imagenes-ramiro {
+                width: 47%;
+                height: 63%;
+                object-fit: contain;
+            }
+        
+            .seccion-2-imagenes-luciano {
+                width: 41%;
+                height: 69%;
+                padding-bottom: 20px;
+                object-fit: contain;
+            }
+        }
+
+        .seccion-2-btns {
+            height: 100px;
+            grid-area: botones;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            padding: 0px 40px;
+
+            .seccion-2-btns-brochure {
+                height: 55px;
+                width: 250px;
+
+                .seccion-2-btns-brochure-texto{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+  /* ___ Tercera sección ___ */
+
+.seccion-3{
+    width: 100%;
+    height: 1380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+    .seccion-3-servicios-titulo{
+        width: 100%;
+        height: 300px;
+        background-color: $color-amarillo;
+        color: $color-gris;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+
+        & h2{
+            font-size: calc(20px + 3vw);
+            font-weight: bold;
+            color: $color-gris;
+        }
+    }
+
+    .seccion-3-servicios-1{
+        width: 100%;
+        height: 300px;
+        background-color: $color-gris-claro;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: calc(20px + 2vw) 20px;
+
+        & h2{
+            font-size: calc(14px + 2.5vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding-bottom: 20px;
+        }
+
+        & p{
+            font-weight: 400;
+            font-size: calc(10px + 1vw);
+            color: $color-gris;
+        }
+    }
+
+    .seccion-3-servicios-2{
+        width: 100%;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: calc(20px + 0.5vw) 20px;
+
+        & h2{
+            font-size: calc(14px + 2.5vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding-bottom: 20px;
+        }
+
+        & p{
+            font-weight: 400;
+            font-size: calc(10px + 1vw);
+            color: $color-gris;
+        }
+    }
+
+    .seccion-3-servicios-3{
+        width: 100%;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: calc(20px + 2vw) 20px;
+
+        & h2{
+            font-size: calc(14px + 2.5vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding-bottom: 20px;
+        }
+
+        & p{
+            font-weight: 400;
+            font-size: calc(10px + 1vw);
+            color: $color-gris;
+        }
+    }
+
+    .seccion-3-servicios-4 {
+        width: 100%;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: calc(20px + 2vw) 20px;
+
+        & h2{
+            font-size: calc(14px + 2.5vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding-bottom: 20px;
+        }
+
+        & p{
+            font-weight: 400;
+            font-size: calc(10px + 1vw);
+            color: $color-gris;
+        }
+    }
+}
+
+/* index seccion 3 media screen */
+
+@media screen and (min-width: 480px) {
+
+    .seccion-3{
+        height: 1200px;
+        margin-bottom: 20px;
+
+        .seccion-3-servicios-1{
+            padding: calc(20px + 0.5vw) 20px;
+            margin-bottom: 30px;
+        }
+
+        .seccion-3-servicios-2 {
+            padding: calc(20px + 0.5vw) 5px calc(20px + 0.5vw) 20px;
+        }   
+
+        .seccion-3-servicios-3 {
+            padding: calc(20px + 0.5vw) 5px calc(20px + 0.25vw) 20px;
+        } 
+
+        .seccion-3-servicios-4 {
+            padding: calc(20px + 1.25vw) 20px calc(20px + 1.5vw) 20px;
+        }   
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .seccion-3{
+        height: 1250px;
+
+        .seccion-3-servicios-4 {
+            padding-right: 5px;
+            margin-bottom: 20px;
+        }   
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .seccion-3 {
+        width: 100%;
+        height: 1170px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 330px 280px 280px 280px;
+        grid-template-areas: "tituloServicios tituloServicios" "servicio2 servicio1" "servicio3 servicio1" "servicio4 servicio1";
+        margin-bottom: 0px;
+
+        .seccion-3-servicios-titulo {
+            width: 100%;
+            height: 300px;
+            grid-area: tituloServicios;
+
+            & h2 {
+                font-size: calc(18px + 2vw);
+            }
+        }
+
+        .seccion-3-servicios-1 {
+            height: 840px;
+            width: 100%;
+            grid-area: servicio1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0%;
+            margin-bottom: 0px;
+
+            & h2{
+                width: 80%;
+                font-size: calc(14px + 1.5vw);
+            }
+
+            & p{
+                width: 80%;
+                font-weight: 400;
+                font-size: calc(9px + 0.75vw);
+                color: $color-gris;
+                padding-right: 20px;
+            }
+        }
+
+        .seccion-3-servicios-2 {
+            height: 280px;
+            width: 100%;
+            grid-area: servicio2;
+            padding-right: 0px;
+            padding-top: 40px;
+
+            & h2{
+                font-size: calc(14px + 1.25vw);
+            }
+
+            & p{
+                width: 88%;
+                font-weight: 400;
+                font-size: calc(12px + 0.5vw);
+                color: $color-gris;
+            }
+        }
+
+        .seccion-3-servicios-3 {
+            height: 280px;
+            width: 100%;
+            grid-area: servicio3;
+            padding: 15px 5px calc(20px + 0.25vw) 20px;
+
+            & h2{
+                font-size: calc(14px + 1.25vw);
+            }
+
+            & p{
+                width: 88%;
+                font-weight: 400;
+                font-size: calc(12px + 0.5vw);
+                color: $color-gris;
+            }
+        }
+
+        .seccion-3-servicios-4 {
+            height: 280px;
+            width: 100%;
+            grid-area: servicio4;
+            margin-bottom: 0px;
+
+            & h2{
+                font-size: calc(14px + 1.25vw);
+            }
+
+            & p{
+                width: 88%;
+                font-weight: 400;
+                font-size: calc(12px + 0.5vw);
+                color: $color-gris;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+  /* ___ Cuarta sección ___ */
+
+.seccion-4{
+    width: 100%;
+    height: 1220px;
+
+    .seccion-4-introduccion{
+        width: 100%;
+        height: 500px;
+    
+        background-color: $color-gris-claro;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+
+        .seccion-4-linea-amarilla-1 {
+            display: inline-block;
+            width: 100px;
+            height: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            left: -30px;
+            top: -10px;
+        }
+
+        .seccion-4-introduccion-titulo{
+            font-size: calc(14px + 2.5vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding-bottom: 20px;
+        }
+        
+        .seccion-4-introduccion-parrafo{
+            font-weight: 400;
+            font-size: calc(10px + 1vw);
+            color: $color-gris;
+        }
+    }
+
+    .seccion-4-explicacion{
+        width: 100%;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat (5, 140px);
+        grid-template-areas: "explicacion1 explicacion2" "explicacion3 explicacion4" "explicacion5 explicacion6" "explicacion7 explicacion8" "explicacion9 explicacion10";
+
+        .seccion-4-explicacion-marketing {
+            width: 100%;
+            height: 140px;
+            grid-area: explicacion1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding:10px;
+            margin-top: 10px;
+        }
+
+        & h3{
+            font-size: calc(12px + 1.5vw);
+            font-weight: bold;
+            color: $color-gris;
+            padding: 5px 5px 5px 12px;
+        }
+
+        & p{
+            font-size: calc(10px + 1vw);
+            font-weight: 400;
+            color: $color-gris;
+            padding: 5px 5px 5px 12px;
+        }
+
+        .seccion-4-explicacion-big-data {
+            width: 100%;
+            height: 140px;
+            grid-area: explicacion2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .seccion-4-explicacion-mercado {
+            width: 100%;
+            height: 140px;
+            grid-area: explicacion3;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .seccion-4-explicacion-ecommerce{
+            width: 100%;
+            height: 140px;
+            grid-area: explicacion4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .seccion-4-explicacion-optimizacion {
+            width: 100%;
+            height: 140px;
+            grid-area: explicacion5;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .seccion-4-explicacion-riesgo {
+            width: 100%;
+            height: 140px;
+            grid-area: explicacion6;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .seccion-4-explicacion-fraude {
+            width: 100%;
+            height: 140px;
+            grid-area: explicacion7;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .seccion-4-explicacion-digitalizacion {
+            width: 100%;
+            height: 140px;
+            grid-area: explicacion8;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .seccion-4-explicacion-ux-ui {
+            width: 100%;
+            height: 140px;
+            grid-area: explicacion9;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+        
+        .seccion-4-explicacion-sostenibilidad {
+            width: 100%;
+            height: 140px;
+            grid-area: explicacion10;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            padding: 10px;
+        }
+    }
+}
+
+
+/* index seccion 4 media screen */
+
+@media screen and (min-width: 768px) {
+    
+    .seccion-4 {
+        height: 1250px;
+
+        .seccion-4-introduccion{
+            padding-top: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 40px;
+        }
+
+        .seccion-4-explicacion {
+            margin-top: 18px;
+
+            .seccion-4-explicacion-marketing {
+                padding: $padding-index-seccion-4-explicacion-760px;
+                margin-top: 10px;
+            }
+        
+            .seccion-4-explicacion p {
+                font-size: calc(8px + 1vw);
+            }
+            
+            .seccion-4-explicacion-big-data {
+                padding: $padding-index-seccion-4-explicacion-760px;
+                margin-top: 10px;
+            }
+            
+            .seccion-4-explicacion-mercado {
+                padding: $padding-index-seccion-4-explicacion-760px;
+            }
+            
+            .seccion-4-explicacion-ecommerce{
+                padding: $padding-index-seccion-4-explicacion-760px;
+            }
+            
+            .seccion-4-explicacion-optimizacion {
+                padding: $padding-index-seccion-4-explicacion-760px;
+            }
+            
+            .seccion-4-explicacion-riesgo {
+                padding: $padding-index-seccion-4-explicacion-760px;
+            }
+            
+            .seccion-4-explicacion-fraude {
+                padding: $padding-index-seccion-4-explicacion-760px;
+            }
+            
+            .seccion-4-explicacion-digitalizacion {
+                padding: $padding-index-seccion-4-explicacion-760px;
+            }
+            
+            .seccion-4-explicacion-ux-ui {
+                padding: $padding-index-seccion-4-explicacion-760px;
+            }
+            
+            .seccion-4-explicacion-sostenibilidad {
+                padding: $padding-index-seccion-4-explicacion-760px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .seccion-4{
+        height: 890px;
+
+        .seccion-4-introduccion{
+            height: 425px;
+
+            .seccion-4-linea-amarilla-1 {
+                width: 125px;
+                margin-bottom: 0px;
+            }
+
+            .seccion-4-introduccion-titulo{
+                font-size: calc(14px + 1.5vw);
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            
+            .seccion-4-introduccion-parrafo{
+                font-size: calc(10px + 0.55vw);
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+
+        .seccion-4-explicacion{
+            height: 380px;
+            margin-top: 50px;
+            grid-template-columns: repeat(5, 20%);
+            grid-template-rows: repeat(2, 200px);
+            grid-template-areas: "explicacion1 explicacion2 explicacion3 explicacion4 explicacion5" "explicacion6 explicacion7 explicacion8 explicacion9 explicacion10";
+            margin-bottom: 30px;
+
+            & h3{
+                font-size: calc(14px + 0.9vw);
+            }
+
+            & p {
+                font-size: calc(10px + 0.5vw);
+            }
+
+            .seccion-4-explicacion-marketing {
+                width: 100%;
+                height: 200px;
+                grid-area: explicacion1;
+                margin-top: 0px;
+                padding: 20px 30px;
+            }
+            
+            .seccion-4-explicacion-big-data {
+                width: 100%;
+                height: 200px;
+                grid-area: explicacion2;
+                margin-top: 0px;
+                padding: 20px 30px;
+            }
+            
+            .seccion-4-explicacion-mercado {
+                width: 100%;
+                height: 200px;
+                grid-area: explicacion3;
+                padding: 20px 30px;
+            }
+            
+            .seccion-4-explicacion-ecommerce{
+                width: 100%;
+                height: 200px;
+                grid-area: explicacion4;
+                padding: 20px 30px;
+            }
+            
+            .seccion-4-explicacion-ecommerce h3 {
+                font-size: calc(14px + 0.9vw);
+            }
+            
+            .seccion-4-explicacion-optimizacion {
+                width: 100%;
+                height: 200px;
+                grid-area: explicacion5;
+                padding: 20px 30px;
+            }
+            
+            .seccion-4-explicacion-riesgo {
+                width: 100%;
+                height: 200px;
+                grid-area: explicacion6;
+                padding: 20px 30px;
+            }
+            
+            .seccion-4-explicacion-fraude {
+                width: 100%;
+                height: 200px;
+                grid-area: explicacion7;
+                padding: 20px 30px;
+            }
+            
+            .seccion-4-explicacion-digitalizacion {
+                width: 100%;
+                height: 200px;
+                grid-area: explicacion8;
+                padding: 20px 30px;
+            }
+            
+            .seccion-4-explicacion-ux-ui {
+                width: 100%;
+                height: 200px;
+                grid-area: explicacion9;
+                padding: 20px 30px;
+            }
+            
+            .seccion-4-explicacion-sostenibilidad {
+                width: 100%;
+                height: 200px;
+                grid-area: explicacion10;
+                padding: 20px 30px;
+            }
+        }
+    }
+}

@@ -333,38 +333,26 @@ footer .footer-copyright p {
 @media screen and (min-width: 768px) {
   .portada {
     height: 500px;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 500px;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
+  }
+  .portada .portada-video {
+    height: 500px;
+  }
+  .portada .portada-titulo {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
-  .portada .portada-imagen {
-    width: 100%;
-    height: 80%;
+  .portada .portada-titulo-imagen {
+    display: inline-block;
+    width: 250px;
+    position: relative;
   }
-  .portada .portada-imagen img {
-    padding-top: 20px;
-  }
-  .portada .portada-cuadro {
-    width: 100%;
-    height: 80%;
-  }
-  .portada .portada-cuadro .portada-cuadro-texto {
-    width: 85%;
-    max-width: 600px;
-    padding: 20px;
-  }
-  .portada .portada-cuadro .portada-cuadro-texto h1 {
-    font-size: min(18px + 2vw, 41px);
-  }
-  .portada .portada-cuadro .portada-cuadro-texto p {
-    max-width: 450px;
-    font-size: min(11px + 0.6vw, 36px);
-    color: #404040;
-    padding: 0px;
+  .portada .portada-titulo-h1 {
+    width: 280px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1200px) {

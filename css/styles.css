@@ -280,7 +280,7 @@ footer .footer-copyright p {
 /* ___ Primera sección o portada ___ */
 .portada {
   width: 100%;
-  height: 750px;
+  height: 550px;
   background-color: #ffc72c;
   display: flex;
   justify-content: center;
@@ -288,7 +288,7 @@ footer .footer-copyright p {
 }
 .portada .portada-video {
   width: 100%;
-  height: 750px;
+  height: 550px;
   object-fit: cover;
   position: absolute;
 }

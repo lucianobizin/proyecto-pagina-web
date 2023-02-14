@@ -320,10 +320,10 @@ footer .footer-copyright p {
 /* index portada media screen */
 @media screen and (min-width: 768px) {
   .portada {
-    height: 550px;
+    height: 615px;
   }
   .portada .portada-video {
-    height: 550px;
+    height: 615px;
   }
   .portada .portada-titulo .portada-titulo-imagen {
     width: calc(250px + 1vw);

@@ -24,11 +24,13 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        gap: 30px;
     }
 
     .portada-titulo-imagen{
         display: inline-block;
-        width: 250px;
+        width: 200px;
+        height: 100px;
         position: relative;
     }
 

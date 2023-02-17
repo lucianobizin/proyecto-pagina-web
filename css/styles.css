@@ -1183,13 +1183,12 @@ footer .footer-copyright p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap: 30px;
 }
 .nosotros-portada .nosotros-portada-titulo-h1 {
   display: inline-block;
   width: 300px;
   position: relative;
-  font-size: calc(20px + 8vw);
+  font-size: calc(20px + 6vw);
   font-weight: bold;
   color: white;
   text-align: center;

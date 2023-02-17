@@ -18,19 +18,24 @@
 
     <header>
         <div class="header-logo">
-            <img src="../img/header__logo.webp" alt="Logo gris con fondo transparente de BDG Consulting 4.0" class="header-logo-img">
+            <img src="../img/header__logo.webp" alt="Logo gris de BDG Consulting 4.0" class="header-logo-img">
         </div>
-        <h1>BDG CONSULTING 4.0</h1>
+        <a class= "header-a-arg" href="">
+            <img class= "header-a-icono-arg" src="../img/argentina.png" alt="bandera argentina">  
+        </a>
+        <a class="header-a-uk" href="">
+            <img class= "header-a-icono-uk" src="../img/united-kingdom.png" alt="bandera uk"> 
+        </a>
         <nav class="boton-header">
             <input id="boton-menu" , type="checkbox">
-            <label for="boton-menu">
-                <img class="logo-menu" src="../img/header_menu.webp" alt="Logo de de tres líneas gris horizontales con fondo transparente">
+            <label for="boton-menu" class="boton-menu-label">
+                <img class="logo-menu" src="../img/header_menu.webp" alt="Icono de menú de tipo hamburguesa">
             </label>
             <div class="menu-desplegable">
-                <a class="menu-desplegable-texto" href="../index.html">Inicio</a>
-                <a class="menu-desplegable-texto" href="./nosotros.html">Nosotros</a>
-                <a class="menu-desplegable-texto" href="./servicios.html">Servicios</a>
-                <a class="menu-desplegable-texto" href="./innovacion.html">Innovación</a>
+                <a class="menu-desplegable-texto" href="../index.html">Nosotros</a>
+                <a class="menu-desplegable-texto" href="./pages/nosotros.html">Servicios</a>
+                <a class="menu-desplegable-texto" href="./pages/innovacion.html">Innovación</a>
+                <a class="menu-desplegable-texto" href="./pages/contacto.html">Contacto</a>
             </div>
         </nav>
     </header>
@@ -40,18 +45,12 @@
         <!-- Sección 1 o Portada -->
 
         <section class="contacto-portada">
-            <div class="contacto-portada-cuadro">
-                <div class="contacto-portada-cuadro-texto">
-                    <h1>Contactanos</h1>
-                    <p>Somos una empresa siempre abierta al diálogo y a la innovación. Si te interesan nuestros servicios, si querés saber si lo 4.0 es para tu organización, 
-                        si deseás aplicar IA en tus negocios, si tenés una idea o proyecto pero no te animás a emprederlo, si creés que podés cambiar el mundo a uno más 
-                        sostenible, no lo dudes, comunicate con <strong>BDG CONSULTING 4.0</strong></p>
-                </div>
+            <video class="contacto-portada-video" autoplay muted playsinline data-wf-ignore loop>
+                <source src="../videos/contacto-portada.mp4" type="video/mp4"  data-wf-ignore class="portada-video-source">
+            </video>
+            <div class="contacto-portada-titulo">
+                <h1 class="contacto-portada-titulo-h1">Futuristas</h1>
             </div>
-            <div class="contacto-portada-imagen">
-                <img src="../img/contacto-robot.webp" alt="Muñeco de robot verde-azulado mirando hacia adelante">
-            </div>
-
         </section>
 
         <!-- Sección 2 -->

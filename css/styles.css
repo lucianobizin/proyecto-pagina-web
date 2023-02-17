@@ -3949,45 +3949,34 @@ footer .footer-copyright p {
 /* ___ Primera sección o portada___ */
 .contacto-portada {
   width: 100%;
-  height: 740px;
+  height: 100vh;
   background-color: #ffc72c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.contacto-portada .contacto-portada-cuadro {
+.contacto-portada .contacto-portada-video {
   width: 100%;
-  height: 300px;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+}
+.contacto-portada .contacto-portada-titulo {
+  width: 80%;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.contacto-portada .contacto-portada-cuadro .contacto-portada-cuadro-texto {
-  width: 85%;
-  max-width: 400px;
-  border: 4px #404040 solid;
-  padding: 20px;
-}
-.contacto-portada .contacto-portada-cuadro .contacto-portada-cuadro-texto h1 {
-  font-size: calc(20px + 2.5vw);
+.contacto-portada .contacto-portada-titulo .contacto-portada-titulo-h1 {
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  font-size: calc(20px + 6vw);
   font-weight: bold;
-  color: #404040;
-  padding-bottom: 10px;
-}
-.contacto-portada .contacto-portada-cuadro .contacto-portada-cuadro-texto p {
-  font-size: calc(11px + 0.6vw);
-  color: #404040;
-  padding: 0 1px 0 0;
-}
-.contacto-portada .contacto-portada-imagen {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contacto-portada .contacto-portada-imagen img {
-  width: 90%;
-  height: 90%;
-  object-fit: contain;
+  color: white;
+  text-align: center;
 }
 
 /* contacto sección 1 media screen */

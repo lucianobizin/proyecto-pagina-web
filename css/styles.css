@@ -410,6 +410,7 @@ footer .footer-copyright p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 2px;
 }
 .seccion-2 .seccion-2-imagenes .seccion-2-imagenes-persona {
   width: 100%;

@@ -1185,12 +1185,6 @@ footer .footer-copyright p {
   align-items: center;
   gap: 30px;
 }
-.nosotros-portada .nosotros-portada-titulo-imagen {
-  display: inline-block;
-  width: 80vw;
-  height: 300px;
-  position: relative;
-}
 .nosotros-portada .nosotros-portada-titulo-h1 {
   display: inline-block;
   width: 300px;

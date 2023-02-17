@@ -1189,7 +1189,7 @@ footer .footer-copyright p {
   display: inline-block;
   width: 300px;
   position: relative;
-  font-size: calc(20px + 1vw);
+  font-size: calc(20px + 8vw);
   font-weight: bold;
   color: white;
   text-align: center;

@@ -105,7 +105,7 @@ header .boton-header .menu-desplegable {
   left: -80vw;
 }
 header .boton-header .menu-desplegable .menu-desplegable-texto {
-  font-size: calc(12px + 0.3vw);
+  font-size: calc(12px + 0.5vw);
   font-weight: 600;
   color: rgba(64, 64, 64, 0.8549019608);
   width: 200px;

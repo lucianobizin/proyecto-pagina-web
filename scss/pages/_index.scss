@@ -84,7 +84,7 @@
   /* ___ Segunda sección ___ */
 .seccion-2{
     width: 100%;
-    height: 1450px;
+    height: 1000px;
 
     .seccion-2-texto{
         width:100%;
@@ -120,39 +120,31 @@
             font-weight: bold;
             font-size: calc(10px + 1.5vw);
             color: $color-gris;
-            padding: 0 0 20px 0;
+            padding: 0 20px 20px 0;
         }
         
         .seccion-2-texto-parrafos{
             font-weight: 400;
             font-size: calc(10px + 1vw);
             color: $color-gris;
-            padding: 0 0 20px 0;
+            padding: 0 20px 20px 0;
         }
     }
 
     .seccion-2-imagenes{
         width: 100%;
-        height: 750px;
+        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
 
-        .seccion-2-imagenes-ramiro {
+        .seccion-2-imagenes-persona {
             width: 100%;
-            height: 45%;
+            height: 100%;
             object-fit: contain;
             padding: 10px;
             margin-bottom: 5px;
-        }
-
-        .seccion-2-imagenes-luciano {
-            width: 100%;
-            height: 45%;
-            object-fit: contain;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
         }
 
         .seccion-2-imagenes-ramiro-luciano-768px{

@@ -309,7 +309,7 @@ footer .footer-copyright p {
 .portada .portada-video {
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
 }
 .portada .portada-titulo {

@@ -19,19 +19,24 @@
 
     <header>
         <div class="header-logo">
-            <img src="../img/header__logo.webp" alt="Logo gris de BDG Consulting 4.0 con fondo transparente" class="header-logo-img">
+            <img src="../img/header__logo.webp" alt="Logo gris de BDG Consulting 4.0" class="header-logo-img">
         </div>
-        <h1>BDG CONSULTING 4.0</h1>
+        <a class= "header-a-arg" href="">
+            <img class= "header-a-icono-arg" src="../img/argentina.png" alt="bandera argentina">  
+        </a>
+        <a class="header-a-uk" href="">
+            <img class= "header-a-icono-uk" src="../img/united-kingdom.png" alt="bandera uk"> 
+        </a>
         <nav class="boton-header">
             <input id="boton-menu" , type="checkbox">
-            <label for="boton-menu">
-                <img class="logo-menu" src="../img/header_menu.webp" alt="Logo de de tres líneas gris horizontales">
+            <label for="boton-menu" class="boton-menu-label">
+                <img class="logo-menu" src="../img/header_menu.webp" alt="Icono de menú de tipo hamburguesa">
             </label>
             <div class="menu-desplegable">
-                <a class="menu-desplegable-texto" href="../index.html">Inicio</a>
-                <a class="menu-desplegable-texto" href="./nosotros.html">Nosotros</a>
-                <a class="menu-desplegable-texto" href="./innovacion.html">Innovación</a>
-                <a class="menu-desplegable-texto" href="./contacto.html">Contacto</a>
+                <a class="menu-desplegable-texto" href="../index.html">Nosotros</a>
+                <a class="menu-desplegable-texto" href="./pages/nosotros.html">Servicios</a>
+                <a class="menu-desplegable-texto" href="./pages/innovacion.html">Innovación</a>
+                <a class="menu-desplegable-texto" href="./pages/contacto.html">Contacto</a>
             </div>
         </nav>
     </header>
@@ -40,18 +45,14 @@
 
     <!-- Sección 1 o Portada -->
 
-        <section class="servicios-portada">
-            <div class="servicios-portada-imagen">
-                <img src="../img/arbol.webp" alt="Muñeco de árbol (guardianes de la galaxia) celebrando">
-            </div>
-            <div class="servicios-portada-cuadro">
-                <div class="servicios-portada-cuadro-texto">
-                    <h1>Negocios 4.0</h1>
-                    <p>Somos una empresa dedicada al desarrollo de negocios mediante el business hacking y la inteligencia artificial. Esto significa que trabajamos de forma interdisciplinar para alcanzar el máximo nivel de sostenibilidad y eficiencia en el diseño, manufactura, venta y reciclado de productos y servicios. Nuestra tarea es también ayudar a identificar nuevas oportunidades y alianzas estratégicas.</p>
-                </div>
-            </div>
-
-        </section>
+    <section class="servicios-portada">
+        <video class="servivios-portada-video" autoplay muted playsinline data-wf-ignore loop>
+            <source src="../videos/servicios-portada.mp4" type="video/mp4"  data-wf-ignore class="portada-video-source">
+        </video>
+        <div class="servicios-portada-titulo">
+            <h1 class="servicios-portada-titulo-h1">Industria 4.0</h1>
+        </div>
+    </section>
 
     <!-- Sección 2 -->
 

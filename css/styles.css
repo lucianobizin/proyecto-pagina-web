@@ -1800,43 +1800,34 @@ footer .footer-copyright p {
 /* ___ Primera sección o portada___ */
 .servicios-portada {
   width: 100%;
-  height: 750px;
+  height: 100vh;
   background-color: #ffc72c;
-}
-.servicios-portada .servicios-portada-imagen {
-  width: 100%;
-  height: 370px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.servicios-portada .servicios-portada-imagen img {
-  width: 85%;
-  height: 85%;
-  object-fit: contain;
-}
-.servicios-portada .servicios-portada-cuadro {
+.servicios-portada .servicios-portada-video {
   width: 100%;
-  height: 320px;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+}
+.servicios-portada .servicios-portada-titulo {
+  width: 80%;
+  height: 100px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
-.servicios-portada .servicios-portada-cuadro .servicios-portada-cuadro-texto {
-  width: 92%;
-  max-width: 430px;
-  border: 4px #404040 solid;
-  padding: 20px;
-}
-.servicios-portada .servicios-portada-cuadro .servicios-portada-cuadro-texto h1 {
-  font-size: min(20px + 2.5vw, 28.5px);
+.servicios-portada .servicios-portada-titulo-h1 {
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  font-size: calc(20px + 6vw);
   font-weight: bold;
-  color: #404040;
-  padding-bottom: 10px;
-}
-.servicios-portada .servicios-portada-cuadro .servicios-portada-cuadro-texto p {
-  font-size: min(12px + 0.8vw, 16px);
-  color: #404040;
+  color: white;
+  text-align: center;
 }
 
 /* servicios portada media screen */

@@ -4,49 +4,37 @@
 
 .servicios-portada{
     width: 100%;
-    height: 750px;
+    height: 100vh;
     background-color: $color-amarillo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .servicios-portada-imagen{
-        width:100%;
-        height: 370px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        & img{
-            width: 85%;
-            height: 85%;
-            object-fit: contain;
-        }
+    .servicios-portada-video{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
     }
 
-    .servicios-portada-cuadro{
-        width:100%;
-        height: 320px;
+    .servicios-portada-titulo{
+        width: 80%;
+        height: 100px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-
-        .servicios-portada-cuadro-texto{
-            width: 92%;
-            max-width: 430px;
-            border: 4px $color-gris solid;
-            padding: 20px;
-
-            & h1{
-                font-size: MIN(calc(20px + 2.5vw), 28.5px);
-                font-weight: bold;
-                color: $color-gris;
-                padding-bottom: 10px;
-            }
-
-            & p{
-                font-size: MIN(calc(12px + 0.8vw), 16px);
-                color: $color-gris;
-            }
-        }
     }
+
+    .servicios-portada-titulo-h1{
+        display: inline-block;
+        width: 300px;
+        position: relative;
+        font-size: calc(20px + 6vw);
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    } 
 }
 
 /* servicios portada media screen */

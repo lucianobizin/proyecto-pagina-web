@@ -323,15 +323,15 @@ footer .footer-copyright p {
 }
 .portada .portada-titulo-imagen {
   display: inline-block;
-  width: 200px;
+  width: 270px;
   height: 70px;
   position: relative;
 }
 .portada .portada-titulo-h1 {
   display: inline-block;
-  width: 280px;
+  width: 300px;
   position: relative;
-  font-size: calc(14px + 0.25vw);
+  font-size: calc(16px + 0.25vw);
   font-weight: bold;
   color: white;
   text-align: center;

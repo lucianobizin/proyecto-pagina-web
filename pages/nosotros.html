@@ -18,19 +18,24 @@
     
     <header>
         <div class="header-logo">
-            <img src="../img/header__logo.webp" alt="Logo gris con fondo transparente de BDG Consulting 4.0" class="header-logo-img">
+            <img src="./img/header__logo.webp" alt="Logo gris de BDG Consulting 4.0" class="header-logo-img">
         </div>
-        <h1>BDG CONSULTING 4.0</h1>
+        <a class= "header-a-arg" href="">
+            <img class= "header-a-icono-arg" src="./img/argentina.png" alt="bandera argentina">  
+        </a>
+        <a class="header-a-uk" href="">
+            <img class= "header-a-icono-uk" src="./img/united-kingdom.png" alt="bandera uk"> 
+        </a>
         <nav class="boton-header">
             <input id="boton-menu" , type="checkbox">
-            <label for="boton-menu">
-                <img class="logo-menu" src="../img/header_menu.webp" alt="Logo de de tres líneas gris horizontales con fondo transparente">
+            <label for="boton-menu" class="boton-menu-label">
+                <img class="logo-menu" src="./img/header_menu.webp" alt="Icono de menú de tipo hamburguesa">
             </label>
             <div class="menu-desplegable">
-                <a class="menu-desplegable-texto" href="../index.html">Inicio</a>
-                <a class="menu-desplegable-texto" href="./servicios.html">Servicios</a>
-                <a class="menu-desplegable-texto" href="./innovacion.html">Innovación</a>
-                <a class="menu-desplegable-texto" href="./contacto.html">Contacto</a>
+                <a class="menu-desplegable-texto" href="./pages/nosotros.html">Nosotros</a>
+                <a class="menu-desplegable-texto" href="./pages/servicios.html">Servicios</a>
+                <a class="menu-desplegable-texto" href="./pages/innovacion.html">Innovación</a>
+                <a class="menu-desplegable-texto" href="./pages/contacto.html">Contacto</a>
             </div>
         </nav>
     </header>
@@ -40,16 +45,13 @@
         <!-- Secciòn 1 o Portada -->
 
         <section class="nosotros-portada">
-            <div class="nosotros-portada-cuadro">
-                <div class="nosotros-portada-cuadro-texto">
-                    <h1>Desarrollo de negocios 4.0</h1>
-                    <p>En la era de la cuarta revolución industrial buscamos que las empresas alcancen su máximo potencial por medio del business hacking y el uso sostenible de la inteligencia artificial.</p>
-                </div>
+            <video class="nosotros-portada-video" autoplay muted playsinline data-wf-ignore loop>
+                <source src="./videos/index-portada.mp4" type="video/mp4"  data-wf-ignore class="portada-video-source">
+            </video>
+            <div class="nosotros-portada-titulo">
+                <img src="./img/index-portada-video-etiqueta.svg" alt="Changing the future" class="portada-titulo-imagen">
+                <h1 class="nosotros-portada-titulo-h1">Potenciamos tu organización mediante la IA y el Business Hacking</h1>
             </div>
-            <div class="nosotros-portada-imagen">
-                <img src="../img/chewbacca.webp" alt="Foto de Chewbacca">
-            </div>
-
         </section>
 
         <!-- Secciòn 2 -->

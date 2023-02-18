@@ -482,7 +482,8 @@
 
         & p{
             font-weight: 400;
-            font-size: calc(10px + 1vw);
+            font-size: MIN(calc(10px + 1vw), 14.66px);
+            max-width: 426.4px;
             color: $color-gris;
         }
     }
@@ -504,7 +505,8 @@
 
         & p{
             font-weight: 400;
-            font-size: calc(10px + 1vw);
+            font-size: MIN(calc(10px + 1vw), 14.66px);
+            max-width: 426.4px;
             color: $color-gris;
         }
     }
@@ -526,7 +528,8 @@
 
         & p{
             font-weight: 400;
-            font-size: calc(10px + 1vw);
+            font-size: MIN(calc(10px + 1vw), 14.66px);
+            max-width: 426.4px;
             color: $color-gris;
         }
     }

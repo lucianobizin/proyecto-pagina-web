@@ -501,11 +501,32 @@ footer .footer-copyright p {
 
 /* index seccion 2 media screen */
 @media screen and (min-width: 480px) {
-  .seccion-2-texto-copete {
-    max-width: 680px;
+  .seccion-2 {
+    width: 100%;
+    height: calc(1050px - 25vw);
   }
-  .seccion-2-texto-parrafos {
-    max-width: 696px;
+  .seccion-2 .seccion-2-texto {
+    height: 400px;
+  }
+  .seccion-2 .seccion-2-texto .seccion-2-texto-copete {
+    max-width: 90%;
+  }
+  .seccion-2 .seccion-2-texto .seccion-2-texto-parrafos {
+    max-width: 90%;
+  }
+  .seccion-2 .seccion-2-imagenes {
+    width: 100%;
+    height: calc(425px - 10vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2px;
+  }
+  .seccion-2 .seccion-2-imagenes .seccion-2-imagenes-persona {
+    width: 100%;
+    height: calc(500px - 25vw);
+    object-fit: contain;
   }
   .seccion-2-btns-brochure {
     width: 200px;

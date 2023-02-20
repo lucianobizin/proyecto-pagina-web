@@ -96,7 +96,7 @@ header {
             left: -80vw;
 
             .menu-desplegable-texto{
-                font-size: calc(12px + 0.5vw);
+                font-size: calc(12px + 1vw);
                 font-weight: 600;
                 color: #404040da;
                 width: 200px;
@@ -168,6 +168,7 @@ header {
 @media screen and (min-width: 768px) {
 
     header {
+        grid-template-columns: 20% 50% 5% 5% 20%;
         grid-template-rows: 10vh;
 
         & h1 {
@@ -181,14 +182,14 @@ header {
 
             .menu-desplegable{
                 height: 440px;
-                width: 95vw;
-                left: -78vw;
+                width: 100vw;
+                left: -80vw;
                 row-gap: MIN(15vh, 100px);
                 padding: MIN(5vh, 100px);
                 top: 15vh;
 
                 .menu-desplegable-texto{
-                    font-size: calc(18px + 0.25vw);
+                    font-size: calc(18px + 0.4vw);
                     font-weight: 600;
                 }
             }
@@ -198,7 +199,6 @@ header {
 
 @media screen and (min-width: 1200px){
     header{
-
         grid-template-rows: 15vh;
 
         .header-logo{

@@ -105,7 +105,7 @@ header .boton-header .menu-desplegable {
   left: -80vw;
 }
 header .boton-header .menu-desplegable .menu-desplegable-texto {
-  font-size: calc(12px + 0.5vw);
+  font-size: calc(12px + 1vw);
   font-weight: 600;
   color: rgba(64, 64, 64, 0.8549019608);
   width: 200px;
@@ -158,6 +158,7 @@ header .boton-header input:checked ~ .menu-desplegable .menu-desplegable-texto:h
 }
 @media screen and (min-width: 768px) {
   header {
+    grid-template-columns: 20% 50% 5% 5% 20%;
     grid-template-rows: 10vh;
   }
   header h1 {
@@ -170,14 +171,14 @@ header .boton-header input:checked ~ .menu-desplegable .menu-desplegable-texto:h
   }
   header .boton-header .menu-desplegable {
     height: 440px;
-    width: 95vw;
-    left: -78vw;
+    width: 100vw;
+    left: -80vw;
     row-gap: min(15vh, 100px);
     padding: min(5vh, 100px);
     top: 15vh;
   }
   header .boton-header .menu-desplegable .menu-desplegable-texto {
-    font-size: calc(18px + 0.25vw);
+    font-size: calc(18px + 0.4vw);
     font-weight: 600;
   }
 }

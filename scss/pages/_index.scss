@@ -108,7 +108,7 @@
   /* ___ Segunda sección ___ */
 .seccion-2{
     width: 100%;
-    height: 846px;
+    height: 865px;
 
     .seccion-2-texto{
         width:100%;
@@ -159,7 +159,7 @@
 
     .seccion-2-imagenes{
         width: 100%;
-        height: 260px;
+        height: 280px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -225,8 +225,30 @@
 @media screen and (min-width: 480px) {
 
     .seccion-2{
+        height: calc(1295px - 50vw);
+
+        .seccion-2-imagenes{
+            height: calc(610px - 35vw);
+
+            .seccion-2-imagenes-persona {
+                width: 100%;
+                height: calc(500px - 6vw);
+                object-fit: contain;
+            }
+        }
+    }
+
+    .seccion-2-btns-brochure {
+        width: 200px;
+        height: 45px;
+    }    
+}
+
+@media screen and (min-width: 600px) {
+
+    .seccion-2{
         width: 100%;
-        height: calc(1050px - 25vw);
+        height: calc(1205px - 25vw);
 
         .seccion-2-texto{
             height: 400px;
@@ -243,7 +265,7 @@
 
         .seccion-2-imagenes{
             width: 100%;
-            height: calc(425px - 10vw);
+            height: calc(555px - 10vw);
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -251,9 +273,7 @@
             margin-bottom: 2px;
 
             .seccion-2-imagenes-persona {
-                width: 100%;
-                height: calc(500px - 25vw);
-                object-fit: contain;
+                height: calc(506px - 6vw);
             }
         }
     }
@@ -314,19 +334,11 @@
             align-items: center;
             grid-area: fotos;
 
-            .seccion-2-imagenes-ramiro {
-                display: none;
-            }
-
-            .seccion-2-imagenes-luciano {
-                display: none;
-            }
-
-            .seccion-2-imagenes-ramiro-luciano-768px{
+            .seccion-2-imagenes-persona{
                 display: flex;
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: cover;
             }
         }
 
@@ -361,7 +373,6 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 600px 150px;
         grid-template-areas: "texto fotos" "botones botones";
-        margin-top: 50px;
 
         .seccion-2-texto{
             width:100%;
@@ -404,17 +415,8 @@
             align-items: center;
             grid-area: fotos;
 
-            .seccion-2-imagenes-ramiro {
-                width: 47%;
-                height: 63%;
-                object-fit: contain;
-            }
-        
-            .seccion-2-imagenes-luciano {
-                width: 41%;
-                height: 69%;
-                padding-bottom: 20px;
-                object-fit: contain;
+            .seccion-2-imagenes-persona {
+                padding: 0px 0px 0px 40px;
             }
         }
 
@@ -426,6 +428,7 @@
             justify-content: left;
             align-items: center;
             padding: 0px 40px;
+            margin-top: 20px;
 
             .seccion-2-btns-brochure {
                 height: 55px;

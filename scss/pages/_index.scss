@@ -225,14 +225,12 @@
 @media screen and (min-width: 480px) {
 
     .seccion-2{
-        height: calc(1295px - 50vw);
 
         .seccion-2-imagenes{
-            height: calc(610px - 35vw);
 
             .seccion-2-imagenes-persona {
                 width: 100%;
-                height: calc(500px - 6vw);
+                height: 100%;
                 object-fit: contain;
             }
         }
@@ -248,7 +246,6 @@
 
     .seccion-2{
         width: 100%;
-        height: calc(1205px - 25vw);
 
         .seccion-2-texto{
             height: 400px;
@@ -265,16 +262,11 @@
 
         .seccion-2-imagenes{
             width: 100%;
-            height: calc(555px - 10vw);
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
             margin-bottom: 2px;
-
-            .seccion-2-imagenes-persona {
-                height: calc(506px - 6vw);
-            }
         }
     }
 

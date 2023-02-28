@@ -403,7 +403,6 @@ footer .footer-copyright p {
 /* ___ Segunda sección ___ */
 .seccion-2 {
   width: 100%;
-  height: 870px;
 }
 .seccion-2 .seccion-2-texto {
   width: 100%;
@@ -412,6 +411,7 @@ footer .footer-copyright p {
   flex-direction: column;
   justify-content: space-around;
   padding: 15px 5px 15px calc(30px + 0.5vw);
+  margin-bottom: calc(15px + 1.25vw);
 }
 .seccion-2 .seccion-2-texto h2 {
   font-size: calc(20px + 3vw);
@@ -448,7 +448,6 @@ footer .footer-copyright p {
 }
 .seccion-2 .seccion-2-imagenes {
   width: 100%;
-  height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -457,7 +456,7 @@ footer .footer-copyright p {
 }
 .seccion-2 .seccion-2-imagenes .seccion-2-imagenes-persona {
   width: 100%;
-  height: 280px;
+  height: 100%;
   object-fit: contain;
 }
 .seccion-2 .seccion-2-imagenes .seccion-2-imagenes-ramiro-luciano-768px {

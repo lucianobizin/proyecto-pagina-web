@@ -507,7 +507,6 @@
         & p{
             font-weight: 400;
             font-size: MIN(calc(10px + 1vw), 14.66px);
-            max-width: 426.4px;
             color: $color-gris;
         }
     }
@@ -530,7 +529,6 @@
         & p{
             font-weight: 400;
             font-size: MIN(calc(10px + 1vw), 14.66px);
-            max-width: 426.4px;
             color: $color-gris;
         }
     }
@@ -553,7 +551,6 @@
         & p{
             font-weight: 400;
             font-size: MIN(calc(10px + 1vw), 14.66px);
-            max-width: 426.4px;
             color: $color-gris;
         }
     }
@@ -576,7 +573,6 @@
         & p{
             font-weight: 400;
             font-size: MIN(calc(10px + 1vw), 14.66px);
-            max-width: 426.4px;
             color: $color-gris;
         }
     }
@@ -593,18 +589,50 @@
         .seccion-3-servicios-1{
             padding: calc(20px + 0.5vw) 20px;
             margin-bottom: 30px;
+
+            & h2 {
+                font-size: calc(12px + 3vw);
+            }
+
+            & p {
+                font-size: MIN(calc(10px + 1vw), 13.676px);
+            }
         }
 
         .seccion-3-servicios-2 {
             padding: calc(20px + 0.5vw) 5px calc(20px + 0.5vw) 20px;
+
+            & h2 {
+                font-size: calc(12px + 3vw);
+            }
+
+            & p {
+                font-size: MIN(calc(10px + 1vw), 13.676px);
+            }
         }   
 
         .seccion-3-servicios-3 {
             padding: calc(20px + 0.5vw) 5px calc(20px + 0.25vw) 20px;
+
+            & h2 {
+                font-size: calc(12px + 3vw);
+            }
+
+            & p {
+                font-size: MIN(calc(10px + 1vw), 13.676px);
+            }
         } 
 
         .seccion-3-servicios-4 {
             padding: calc(20px + 1.25vw) 20px calc(20px + 1.5vw) 20px;
+
+            & h2 {
+                font-size: calc(12px + 3vw);
+            }
+
+            & p {
+                font-size: MIN(calc(10px + 1vw), 13.676px);
+            }
         }   
     }
 }
@@ -614,9 +642,57 @@
     .seccion-3{
         height: 1250px;
 
+        .seccion-3-servicios-titulo{
+
+            & h2{
+                font-size: calc(20px + 1.5vw);
+            }
+        }
+
+        .seccion-3-servicios-1{
+
+            & h2 {
+                font-size: calc(12px + 1.5vw);
+            }
+
+            & p {
+                font-size: calc(10px + 0.5vw);
+            }
+        }
+
+        .seccion-3-servicios-2 {
+
+            & h2 {
+                font-size: calc(12px + 1.5vw);
+            }
+
+            & p {
+                font-size: calc(10px + 0.5vw);
+            }
+        }   
+
+        .seccion-3-servicios-3 {
+
+            & h2 {
+                font-size: calc(12px + 1.5vw);
+            }
+
+            & p {
+                font-size: calc(10px + 0.5vw);
+            }
+        } 
+
         .seccion-3-servicios-4 {
             padding-right: 5px;
             margin-bottom: 20px;
+
+            & h2 {
+                font-size: calc(12px + 1.5vw);
+            }
+
+            & p {
+                font-size: calc(10px + 0.5vw);
+            }
         }   
     }
 }
@@ -634,11 +710,11 @@
 
         .seccion-3-servicios-titulo {
             width: 100%;
-            height: 300px;
+            height: 330px;
             grid-area: tituloServicios;
 
             & h2 {
-                font-size: calc(18px + 2vw);
+                font-size: min(18px + 2vw, 58px);
             }
         }
 
@@ -655,13 +731,13 @@
 
             & h2{
                 width: 80%;
-                font-size: calc(14px + 1.5vw);
+                font-size: min(16px + 1.4vw, 44px);
             }
 
             & p{
                 width: 80%;
                 font-weight: 400;
-                font-size: calc(9px + 0.75vw);
+                font-size: min(12px + 0.5vw, 22px);
                 color: $color-gris;
                 padding-right: 20px;
             }
@@ -675,13 +751,13 @@
             padding-top: 40px;
 
             & h2{
-                font-size: calc(14px + 1.25vw);
+                font-size: MIN(16px + 1.4vw, 44px);
             }
 
             & p{
                 width: 88%;
                 font-weight: 400;
-                font-size: calc(12px + 0.5vw);
+                font-size: min(12px + 0.5vw, 22px);
                 color: $color-gris;
             }
         }
@@ -693,13 +769,13 @@
             padding: 15px 5px calc(20px + 0.25vw) 20px;
 
             & h2{
-                font-size: calc(14px + 1.25vw);
+                font-size: MIN(16px + 1.4vw, 44px);
             }
 
             & p{
                 width: 88%;
                 font-weight: 400;
-                font-size: calc(12px + 0.5vw);
+                font-size: min(12px + 0.5vw, 22px);
                 color: $color-gris;
             }
         }
@@ -711,15 +787,15 @@
             margin-bottom: 0px;
 
             & h2{
-                font-size: calc(14px + 1.25vw);
+                font-size: MIN(16px + 1.4vw, 44px);
             }
 
             & p{
                 width: 88%;
                 font-weight: 400;
-                font-size: calc(12px + 0.5vw);
+                font-size: min(12px + 0.5vw, 22px);
                 color: $color-gris;
-                padding-bottom: 20px;
+                padding-bottom: 10px;
             }
         }
     }

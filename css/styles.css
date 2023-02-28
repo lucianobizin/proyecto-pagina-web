@@ -469,7 +469,8 @@ footer .footer-copyright p {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  padding: 10px 55px 10px 47px;
+  padding: 10px 50px;
+  margin-bottom: 2px;
 }
 .seccion-2 .seccion-2-btns .seccion-2-btns-brochure {
   width: 40vw;

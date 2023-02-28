@@ -291,6 +291,10 @@
             .seccion-2-btns-brochure {
                 width: 220px;
                 height: 45px;
+
+                .seccion-2-btns-brochure-texto {
+                    font-size: 16px;
+                }    
             }    
 
         }
@@ -301,11 +305,11 @@
     
     .seccion-2{
         width: 100%;
-        height: 500px;
+        height: 530px;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 400px 100px;
-        grid-template-areas: "texto fotos" "botones botones";
+        grid-template-rows: 400px 130px;
+        grid-template-areas: "texto foto" "botones foto";
 
         .seccion-2-texto{
             width:100%;
@@ -340,12 +344,12 @@
 
         .seccion-2-imagenes{
             width: 100%;
-            height: 400px;
+            height: 530px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            grid-area: fotos;
+            grid-area: foto;
 
             .seccion-2-imagenes-persona{
                 display: flex;
@@ -363,6 +367,7 @@
             justify-content: left;
             align-items: center;
             padding: 40px;
+            gap: 40px;
 
             .seccion-2-btns-brochure {
                 height: 40px;
@@ -381,11 +386,11 @@
     
     .seccion-2 {
         width: 100%;
-        height: 750px;
+        height: 770px;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 600px 150px;
-        grid-template-areas: "texto fotos" "botones botones";
+        grid-template-rows: 600px 170px;
+        grid-template-areas: "texto fotos" "botones fotos";
 
         .seccion-2-texto{
             width:100%;
@@ -421,7 +426,7 @@
 
         .seccion-2-imagenes {
             width: 100%;
-            height: 600px;
+            height: 770px;
             display: flex;
             flex-direction: row;
             justify-content: center;

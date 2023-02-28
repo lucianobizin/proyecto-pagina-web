@@ -245,12 +245,17 @@
                 object-fit: contain;
             }
         }
-    }
 
-    .seccion-2-btns-brochure {
-        width: 200px;
-        height: 45px;
-    }    
+        .seccion-2-btns{
+            gap: 80px;
+
+            .seccion-2-btns-brochure {
+                width: 200px;
+                height: 45px;
+            }    
+            
+        }  
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -279,12 +284,17 @@
             align-items: center;
             margin-bottom: 2px;
         }
-    }
 
-    .seccion-2-btns-brochure {
-        width: 200px;
-        height: 45px;
-    }    
+        .seccion-2-btns{
+            height: 200px;
+
+            .seccion-2-btns-brochure {
+                width: 220px;
+                height: 45px;
+            }    
+
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {

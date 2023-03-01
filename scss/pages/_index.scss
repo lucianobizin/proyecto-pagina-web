@@ -59,12 +59,12 @@
         .portada-titulo{
 
             .portada-titulo-imagen{
-                width: MIN(90vw, 400px);
+                width: MIN(90vw, 450px);
             }
 
             .portada-titulo-h1{
-                font-size: calc(18px + 1vw);
-                width: 400px;
+                font-size: calc(18px + 1.5vw);
+                width: 470px;
             }
         }
 
@@ -84,12 +84,12 @@
         .portada-titulo{
 
             .portada-titulo-imagen{
-                width: calc(250px + 1vw);
+                width: MIN(90vw, 540px);
             }
 
             .portada-titulo-h1{
-                font-size: calc(14px + 0.25vw);
-                width: calc(280px + 5vw);
+                font-size: calc(18px + 1.5vw);
+                width: 550px;
             }
         }
 
@@ -102,6 +102,18 @@
     .portada{
         height: 615px;
         grid-template-rows: 615px;
+
+        .portada-titulo{
+
+            .portada-titulo-imagen{
+                width: MIN(90vw, 710px);
+            }
+
+            .portada-titulo-h1{
+                font-size: MIN(18px + 2vw, 58px);
+                width: 840px;
+            }
+        }
     }
 }
 
@@ -496,6 +508,7 @@
         flex-direction: column;
         justify-content: space-around;
         padding: calc(20px + 2vw) 20px;
+        margin-bottom: calc(20px + 5vw);
 
         & h2{
             font-size: calc(14px + 2.5vw);
@@ -562,6 +575,7 @@
         flex-direction: column;
         justify-content: space-around;
         padding: calc(20px + 2vw) 20px;
+        margin-bottom: calc(10px + 2.5vw);
 
         & h2{
             font-size: calc(14px + 2.5vw);
@@ -701,10 +715,10 @@
 
     .seccion-3 {
         width: 100%;
-        height: 1170px;
+        height: 1180px;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 330px 280px 280px 280px;
+        grid-template-rows: 330px 280px 280px 290px;
         grid-template-areas: "tituloServicios tituloServicios" "servicio2 servicio1" "servicio3 servicio1" "servicio4 servicio1";
         margin-bottom: 0px;
 
@@ -719,7 +733,7 @@
         }
 
         .seccion-3-servicios-1 {
-            height: 840px;
+            height: 850px;
             width: 100%;
             grid-area: servicio1;
             display: flex;
@@ -749,6 +763,7 @@
             grid-area: servicio2;
             padding-right: 0px;
             padding-top: 40px;
+            padding-left: 40px;
 
             & h2{
                 font-size: MIN(16px + 1.4vw, 44px);
@@ -766,7 +781,7 @@
             height: 280px;
             width: 100%;
             grid-area: servicio3;
-            padding: 15px 5px calc(20px + 0.25vw) 20px;
+            padding: 15px 5px calc(20px + 0.25vw) 40px;
 
             & h2{
                 font-size: MIN(16px + 1.4vw, 44px);
@@ -785,6 +800,7 @@
             width: 100%;
             grid-area: servicio4;
             margin-bottom: 0px;
+            padding-left: 40px;
 
             & h2{
                 font-size: MIN(16px + 1.4vw, 44px);
@@ -805,7 +821,7 @@
 
 .seccion-4{
     width: 100%;
-    height: 1220px;
+    height: 1237px;
 
     .seccion-4-introduccion{
         width: 100%;
@@ -821,6 +837,8 @@
         padding-left: 30px;
         padding-right: 20px;
         padding-bottom: 50px;
+
+        margin-bottom: 20px;
 
         .seccion-4-linea-amarilla-1 {
             display: inline-block;
@@ -842,7 +860,7 @@
         
         .seccion-4-introduccion-parrafo{
             font-weight: 400;
-            font-size: MIN(calc(10px + 1vw), 14.56px);
+            font-size: MIN(10px + 1vw, 14.66px);
             color: $color-gris;
             max-width: 406px;
         }
@@ -987,6 +1005,31 @@
 
 /* index seccion 4 media screen */
 
+@media screen and (min-width: 480px) {
+    
+    .seccion-4 {
+        height: 1250px;
+
+        .seccion-4-introduccion{
+            padding-top: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 40px;
+
+            .seccion-4-introduccion-titulo{
+                font-size: calc(12px + 3vw);
+                max-width: none;
+                padding-right: 20px;
+            }
+
+            .seccion-4-introduccion-parrafo{
+                font-size: MIN(10px + 1vw, 13.676px);
+                max-width: none;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
     
     .seccion-4 {
@@ -997,6 +1040,14 @@
             padding-left: 30px;
             padding-right: 30px;
             padding-bottom: 40px;
+
+            .seccion-4-introduccion-titulo{
+                font-size: calc(12px + 1.5vw);
+            }
+
+            .seccion-4-introduccion-parrafo{
+                font-size: calc(10px + 0.5vw);
+            }
         }
 
         .seccion-4-explicacion {
@@ -1058,6 +1109,15 @@
 
         .seccion-4-introduccion{
             height: 425px;
+
+            .seccion-4-introduccion-titulo{
+                font-size: MIN(16px + 1.4vw, 44px);
+                padding-right: 100px;
+            }
+
+            .seccion-4-introduccion-parrafo{
+                font-size: MIN(12px + 0.5vw, 22px);
+            }
 
             .seccion-4-linea-amarilla-1 {
                 width: 125px;

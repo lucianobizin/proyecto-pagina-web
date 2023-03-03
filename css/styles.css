@@ -3472,8 +3472,8 @@ footer .footer-copyright p {
   position: absolute;
 }
 .innovacion-portada .innovacion-portada-titulo {
-  width: 80%;
-  height: 100px;
+  width: 90%;
+  height: 170px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -3483,88 +3483,45 @@ footer .footer-copyright p {
   display: inline-block;
   width: 300px;
   position: relative;
-  font-size: calc(20px + 6vw);
+  font-size: min(22px + 1vw, 25.6px);
   font-weight: bold;
   color: white;
   text-align: center;
 }
 
 /* innovación sección 1 o portada media screen */
+@media screen and (min-width: 480px) {
+  .innovacion-portada {
+    height: 615px;
+  }
+  .innovacion-portada .innovacion-portada-video {
+    height: 615px;
+  }
+  .innovacion-portada .innovacion-portada-titulo .innovacion-portada-titulo-h1 {
+    font-size: calc(18px + 1.5vw);
+    width: 470px;
+  }
+}
 @media screen and (min-width: 768px) {
   .innovacion-portada {
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 500px;
-    grid-template-areas: "cuadro imagen";
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
+    height: 615px;
   }
-  .innovacion-portada .innovacion-portada-cuadro {
-    width: 100%;
-    height: 80%;
-    grid-area: cuadro;
-    max-width: 408px;
+  .innovacion-portada .innovacion-portada-video {
+    height: 615px;
   }
-  .innovacion-portada .innovacion-portada-cuadro .innovacion-portada-cuadro-texto {
-    width: 85%;
-    max-width: 600px;
-    padding: 20px;
-  }
-  .innovacion-portada .innovacion-portada-cuadro .innovacion-portada-cuadro-texto h1 {
-    font-size: min(18px + 2vw, 38.6px);
-    margin: 10px 0px;
-  }
-  .innovacion-portada .innovacion-portada-cuadro .innovacion-portada-cuadro-texto p {
-    font-size: min(12px + 0.5vw, 17.09px);
-    margin: 10px 0px;
-  }
-  .innovacion-portada .innovacion-portada-imagen {
-    width: 100%;
-    height: 100%;
-    grid-area: imagen;
-  }
-  .innovacion-portada .innovacion-portada-imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  .innovacion-portada .innovacion-portada-titulo .innovacion-portada-titulo-h1 {
+    font-size: calc(18px + 1.5vw);
+    width: 550px;
   }
 }
 @media screen and (min-width: 1200px) {
   .innovacion-portada {
     height: 615px;
     grid-template-rows: 615px;
-    grid-template-areas: "cuadro imagen";
   }
-  .innovacion-portada .innovacion-portada-cuadro {
-    width: 80%;
-    height: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    position: relative;
-    bottom: 15px;
-  }
-  .innovacion-portada .innovacion-portada-cuadro .innovacion-portada-cuadro-texto {
-    width: 90%;
-    max-width: 650px;
-    border: 4px #404040 solid;
-    padding: 40px;
-  }
-  .innovacion-portada .innovacion-portada-cuadro .innovacion-portada-cuadro-texto h1 {
-    font-size: calc(20px + 2vw);
-    margin: 15px 0px;
-  }
-  .innovacion-portada .innovacion-portada-cuadro .innovacion-portada-cuadro-texto p {
-    font-size: calc(12px + 0.75vw);
-  }
-  .innovacion-portada .innovacion-portada-imagen img {
-    height: 90%;
-    width: 90%;
-    object-fit: contain;
-    position: relative;
-    bottom: 15px;
+  .innovacion-portada .innovacion-portada-titulo .innovacion-portada-titulo-h1 {
+    font-size: min(18px + 2vw, 58px);
+    width: 840px;
   }
 }
 /* ___ Segunda sección ___ */

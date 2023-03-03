@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Contact | We help you think about the development of your company using AI</title>
+    <link rel="icon" type="image/x-icon" href="../img/header__logo.webp">
+    <meta name="description" content="We want to help you adapt your company to industry 4.0 through the implementation of Artificial Intelligence and Business Hacking. Let's have a virtual coffee.">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img src="../img/header__logo.webp" alt="BDG Consulting 4.0 gray logo" class="header-logo-img">
+        </div>
+        <a class= "header-a-arg" href="../pages/contacto.html">
+            <img class= "header-a-icono-arg" src="../img/argentina.png" alt="Argentina's flag">  
+        </a>
+        <a class="header-a-uk" href="./contact.html">
+            <img class= "header-a-icono-uk" src="../img/united-kingdom.png" alt="UK's flag"> 
+        </a>
+        <nav class="boton-header">
+            <input id="boton-menu" , type="checkbox">
+            <label for="boton-menu" class="boton-menu-label">
+                <img class="logo-menu" src="../img/header_menu.webp" alt="Hamburger icon">
+            </label>
+            <div class="menu-desplegable">
+                <a class="menu-desplegable-texto" href="./main.html">Main</a>
+                <a class="menu-desplegable-texto" href="./us.html">About us</a>
+                <a class="menu-desplegable-texto" href="./services.html">Services</a>
+                <a class="menu-desplegable-texto" href="./innovation.html">Innovation</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Sección 1 o Portada -->
+
+        <section class="contacto-portada">
+            <video class="contacto-portada-video" autoplay muted playsinline data-wf-ignore loop>
+                <source src="../videos/contacto-portada.mp4" type="video/mp4"  data-wf-ignore class="portada-video-source">
+            </video>
+            <div class="contacto-portada-titulo">
+                <h1 class="contacto-portada-titulo-h1">Cheer up</h1>
+            </div>
+        </section>
+
+        <!-- Sección 2 -->
+
+
+        <section class="contacto-seccion-2">
+
+            <div class="contacto-seccion-2-titulo">
+                <h2>Contact us</h2>
+            </div>
+
+            <div class="contacto-seccion-2-linea">
+                <hr>
+            </div>
+                
+            <div class="contacto-seccion-2-trabajo">
+    
+                <div class="contacto-seccion-2-trabajo-parrafo">
+                    <p>Below you will find a form to tell us your need. We want you to have all possible access routes to our world. 
+                        We are dying to help you to be the best company in your field, and "why not?", in the world.</p>
+                </div>
+    
+                <div class="contacto-seccion-2-trabajo-strong">
+                    <p>The first talk is 100% free.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3 -->
+
+        <section class="contacto-seccion-3" id="formulario">
+            <div class="contacto-seccion-3-imagen">
+                <img src="../img/contacto-dino.webp" alt="Toy dinosaur trying to push a coffee cup to the right">
+            </div>
+
+            <div class="contacto-seccion-3-formulario">
+
+                <h2>Contact form</h2>
+
+                <form class="contacto-seccion-3-formulario-partes" method="POST" action="https://formsubmit.co/744ba65c38564ec782b90e0bc158361f">
+
+                    <div class="contacto-seccion-3-formulario-texto">
+                        <label class="contacto-seccion-3-formulario-texto-label" for="nombre">Enter your name</label>
+                        <input class="contacto-seccion-3-formulario-texto-input" type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre y apellido" required>
+                    </div>
+
+                    <div class="contacto-seccion-3-formulario-texto">
+                        <label class="contacto-seccion-3-formulario-texto-label" for="email">Enter your email</label>
+                        <input class="contacto-seccion-3-formulario-texto-input" type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="contacto-seccion-3-formulario-texto">
+                        <label class="contacto-seccion-3-formulario-texto-label" for="mensaje">Enter your message</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="What do you want to tell us?" required></textarea>
+                    </div>
+
+                    <div class="contacto-seccion-3-formulario-texto">
+                        <label class="contacto-seccion-3-formulario-texto-label" for="asunto-usuario">Select a subject</label>
+                        <select class="contacto-seccion-3-formulario-texto-select" name="asunto-usuario" id="asunto-usuario">
+                            <option class="contacto-seccion-3-formulario-texto-option" value="mensaje">Request</option>
+                            <option class="contacto-seccion-3-formulario-texto-option" value="reclamo">Claim</option>
+                            <option class="contacto-seccion-3-formulario-texto-option" value="otro">Other issues</option>
+                        </select>
+                    </div>
+
+                    <div class="contacto-seccion-3-formulario-texto">
+                        <label class="contacto-seccion-3-formulario-texto-label-checkbok" for="novedad-usuario">Do you want to receive news?</label>
+                        <input type="checkbox" id="novedad-usuario" value="acepta-info">
+                    </div>
+
+                    <div class="contacto-seccion-3-formulario-texto">
+                        <input class="contacto-seccion-3-formulario-texto-enviar" type="submit" value="Send">
+                        <input class="contacto-seccion-3-formulario-texto-restablecer" type="reset" value="Refresh form">
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-slogan">
+            <p>CHANGING THE FUTURE</p>
+        </div>
+        <div class="footer-botones">
+            <a href="http://wa.me/5491137044982?text=Hola%21+Me+interesan+los+servicios+que+ofrecen" target="_blank">
+                <img class= "footer-icono" src="../img/whatsapp100.webp" alt="ícono de WhatsApp">     
+            </a>
+            <a href="mailto:bdgconsulting4.0@gmail.com" target="_blank">
+                <img class= "footer-icono" src="../img/correo100.webp" alt="ícono de email">     
+            </a>    
+            <a href="https://www.linkedin.com/company/bdg-consulting-4-0/" target="_blank">
+                <img class= "footer-icono" src="../img/linkedin100.webp" alt="ícono de LinkedIn">     
+            </a>    
+            <a href="https://www.instagram.com/bdgconsulting4.0/?hl=en" target="_blank">
+                <img class= "footer-icono" src="../img/instagram100.webp" alt="ícono de Instagram">     
+            </a>    
+            <a href="https://twitter.com/BDGconsulting4" target="_blank">
+                <img class= "footer-icono" src="../img/twitter95.webp" alt="ícono de Twitter">     
+            </a>    
+        </div>
+        <div class="footer-copyright">
+            <p>®BDG CONSULTING 4.0 all rights reserved</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

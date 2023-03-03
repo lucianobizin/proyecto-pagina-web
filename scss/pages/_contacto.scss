@@ -352,7 +352,7 @@
                     color: $color-gris;
                     margin-right: 5px;
                     margin-bottom: 10px;
-                    text-align: center;
+                    text-align: left;
                 }
 
                 .contacto-seccion-3-formulario-texto-enviar {
@@ -534,6 +534,7 @@
 
                     .contacto-seccion-3-formulario-texto-label-checkbok {
                         font-size: MIN(calc(12px + 1vw), 18px);
+                        text-align: left;
                     }
                 }
             }

@@ -4287,7 +4287,7 @@ footer .footer-copyright p {
   color: #404040;
   margin-right: 5px;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
 }
 .contacto-seccion-3 .contacto-seccion-3-formulario .contacto-seccion-3-formulario-partes .contacto-seccion-3-formulario-texto .contacto-seccion-3-formulario-texto-enviar {
   width: 70px;
@@ -4431,6 +4431,7 @@ footer .footer-copyright p {
   }
   .contacto-seccion-3 .contacto-seccion-3-formulario .contacto-seccion-3-formulario-partes .contacto-seccion-3-formulario-texto .contacto-seccion-3-formulario-texto-label-checkbok {
     font-size: min(12px + 1vw, 18px);
+    text-align: left;
   }
 }
 

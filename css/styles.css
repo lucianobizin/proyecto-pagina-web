@@ -1949,8 +1949,8 @@ footer .footer-copyright p {
   position: absolute;
 }
 .servicios-portada .servicios-portada-titulo {
-  width: 80%;
-  height: 100px;
+  width: 90%;
+  height: 170px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1960,45 +1960,35 @@ footer .footer-copyright p {
   display: inline-block;
   width: 300px;
   position: relative;
-  font-size: calc(20px + 6vw);
+  font-size: min(22px + 1vw, 25.6px);
   font-weight: bold;
   color: white;
   text-align: center;
 }
 
 /* servicios portada media screen */
+@media screen and (min-width: 480px) {
+  .servicios-portada {
+    height: 615px;
+  }
+  .servicios-portada .servicios-portada-video {
+    height: 615px;
+  }
+  .servicios-portada .servicios-portada-titulo .servicios-portada-titulo-h1 {
+    font-size: calc(18px + 1.5vw);
+    width: 470px;
+  }
+}
 @media screen and (min-width: 768px) {
   .servicios-portada {
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 500px;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
+    height: 615px;
   }
-  .servicios-portada .servicios-portada-imagen {
-    width: 70%;
-    height: 70%;
-    object-fit: contain;
+  .servicios-portada .servicios-portada-video {
+    height: 615px;
   }
-  .servicios-portada .servicios-portada-cuadro {
-    width: 100%;
-    height: 85%;
-  }
-  .servicios-portada .servicios-portada-cuadro .servicios-portada-cuadro-texto {
-    width: 85%;
-    max-width: 390px;
-    padding: 20px;
-  }
-  .servicios-portada .servicios-portada-cuadro .servicios-portada-cuadro-texto h1 {
-    font-size: min(18px + 2vw, 35.5px);
-  }
-  .servicios-portada .servicios-portada-cuadro .servicios-portada-cuadro-texto p {
-    font-size: min(12px + 0.5vw, 16.5px);
-    padding: 0 1px 0 0;
+  .servicios-portada .servicios-portada-titulo .servicios-portada-titulo-h1 {
+    font-size: calc(18px + 1.5vw);
+    width: 550px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2006,31 +1996,9 @@ footer .footer-copyright p {
     height: 615px;
     grid-template-rows: 615px;
   }
-  .servicios-portada .servicios-portada-imagen {
-    width: 85%;
-    height: 85%;
-    object-fit: contain;
-    position: relative;
-    bottom: 20px;
-  }
-  .servicios-portada .servicios-portada-cuadro {
-    padding-right: 40px;
-    position: relative;
-    bottom: 20px;
-  }
-  .servicios-portada .servicios-portada-cuadro .servicios-portada-cuadro-texto {
-    width: 78%;
-    max-width: 700px;
-    max-height: 600px;
-    border: 4px #404040 solid;
-    padding: 40px;
-  }
-  .servicios-portada .servicios-portada-cuadro .servicios-portada-cuadro-texto h1 {
-    font-size: min(20px + 1.6vw, 45px);
-    margin: 15px 0px;
-  }
-  .servicios-portada .servicios-portada-cuadro .servicios-portada-cuadro-texto p {
-    font-size: min(12px + 0.7vw, 22.6px);
+  .servicios-portada .servicios-portada-titulo .servicios-portada-titulo-h1 {
+    font-size: min(18px + 2vw, 58px);
+    width: 840px;
   }
 }
 /* ___ Segunda sección ___ */

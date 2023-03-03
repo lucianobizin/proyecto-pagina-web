@@ -3665,7 +3665,7 @@ footer .footer-copyright p {
 /* ___ Tercera sección ___ */
 .innovacion-seccion-3 {
   width: 100%;
-  height: calc(1650px - 15vw);
+  height: calc(1500px - 2vw);
   background-color: rgb(216, 216, 216);
 }
 .innovacion-seccion-3 .innovacion-seccion-3-titulo {
@@ -3683,8 +3683,8 @@ footer .footer-copyright p {
 }
 .innovacion-seccion-3 .innovacion-seccion-3-ml {
   width: 100%;
-  height: calc(570px - 1vw);
   padding: 0px 20px;
+  margin-bottom: 10px;
 }
 .innovacion-seccion-3 .innovacion-seccion-3-ml .innovacion-seccion-3-ml-titulo {
   width: 50%;
@@ -3701,7 +3701,6 @@ footer .footer-copyright p {
 }
 .innovacion-seccion-3 .innovacion-seccion-3-ml .innovacion-seccion-3-ml-texto {
   width: 85%;
-  height: calc(450px - 0.3vw);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -3947,7 +3946,7 @@ footer .footer-copyright p {
   .innovacion-seccion-3 {
     height: 1600px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 160px calc(700px - 1vw) 100px 600px;
+    grid-template-rows: 160px calc(700px - 5vw) 100px 600px;
     grid-template-areas: "titulo titulo" "ml beneficios" "boton boton" "foto foto";
   }
   .innovacion-seccion-3 .innovacion-seccion-3-titulo {

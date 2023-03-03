@@ -21,8 +21,8 @@
     }
 
     .contacto-portada-titulo{
-        width: 80%;
-        height: 100px;
+        width: 90%;
+        height: 170px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -32,7 +32,7 @@
             display: inline-block;
             width: 300px;
             position: relative;
-            font-size: calc(20px + 6vw);
+            font-size: MIN(calc(22px + 1vw), 25.6px);
             font-weight: bold;
             color: white;
             text-align: center;
@@ -42,26 +42,39 @@
 
 /* contacto sección 1 media screen */
 
+@media screen and (min-width: 480px) {
+
+    .contacto-portada{
+        height: 615px;
+        
+        .contacto-portada-video{
+            height: 615px;
+        }
+
+        .contacto-portada-titulo{
+
+            .contacto-portada-titulo-h1{
+                font-size: calc(18px + 1.5vw);
+                width: 470px;
+            }
+        }
+    }
+}
 @media screen and (min-width: 768px) {
 
     .contacto-portada{
-        height: 880px;
-
-        .contacto-portada-cuadro {
-            height: 420px;
-
-            .contacto-portada-cuadro-texto{
-                width: calc(80% + 1vw);
-                max-width: 450px;
-                border: 4px $color-gris solid;
-                padding: 20px;
-            }
+        height: 615px;
+        
+        .contacto-portada-video{
+            height: 615px;
         }
 
-        .contacto-portada-imagen img{
-            width: 95%;
-            height: 95%;
-            object-fit:contain;
+        .contacto-portada-titulo{
+
+            .contacto-portada-titulo-h1{
+                font-size: calc(18px + 1.5vw);
+                width: 550px;
+            }
         }
     }
 }
@@ -70,51 +83,13 @@
 
     .contacto-portada{
         height: 615px;
-        display: grid;
-        grid-template-columns: 50% 50%;
         grid-template-rows: 615px;
-        grid-template-areas: "cuadro imagen";
 
-        .contacto-portada-cuadro {
-            width: 100%;
-            height: 615px;
-            position: relative;
-            left: 30px;
-            bottom: 15px;
-            grid-area: cuadro;
+        .contacto-portada-titulo{
 
-            .contacto-portada-cuadro-texto {
-                width: 85%;
-                max-width: 570px;
-                height: 420px; 
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                & h1{
-                    font-size: MIN(calc(20px + 2.5vw), 62px);
-                }
-
-                & p{
-                    font-size: MIN(calc(12px + 0.7vw), 22.6px);
-                }
-            }
-        }
-
-        .contacto-portada-imagen{
-            width: 100%;
-            height: 615px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            position: relative;
-            bottom: 15px;
-            grid-area: imagen;
-
-            & img{
-                width: 80%;
-                height: 80%;
+            .contacto-portada-titulo-h1{
+                font-size: MIN(18px + 2vw, 58px);
+                width: 840px;
             }
         }
     }

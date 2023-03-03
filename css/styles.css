@@ -4022,8 +4022,8 @@ footer .footer-copyright p {
   position: absolute;
 }
 .contacto-portada .contacto-portada-titulo {
-  width: 80%;
-  height: 100px;
+  width: 90%;
+  height: 170px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -4033,76 +4033,45 @@ footer .footer-copyright p {
   display: inline-block;
   width: 300px;
   position: relative;
-  font-size: calc(20px + 6vw);
+  font-size: min(22px + 1vw, 25.6px);
   font-weight: bold;
   color: white;
   text-align: center;
 }
 
 /* contacto sección 1 media screen */
+@media screen and (min-width: 480px) {
+  .contacto-portada {
+    height: 615px;
+  }
+  .contacto-portada .contacto-portada-video {
+    height: 615px;
+  }
+  .contacto-portada .contacto-portada-titulo .contacto-portada-titulo-h1 {
+    font-size: calc(18px + 1.5vw);
+    width: 470px;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacto-portada {
-    height: 880px;
+    height: 615px;
   }
-  .contacto-portada .contacto-portada-cuadro {
-    height: 420px;
+  .contacto-portada .contacto-portada-video {
+    height: 615px;
   }
-  .contacto-portada .contacto-portada-cuadro .contacto-portada-cuadro-texto {
-    width: calc(80% + 1vw);
-    max-width: 450px;
-    border: 4px #404040 solid;
-    padding: 20px;
-  }
-  .contacto-portada .contacto-portada-imagen img {
-    width: 95%;
-    height: 95%;
-    object-fit: contain;
+  .contacto-portada .contacto-portada-titulo .contacto-portada-titulo-h1 {
+    font-size: calc(18px + 1.5vw);
+    width: 550px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacto-portada {
     height: 615px;
-    display: grid;
-    grid-template-columns: 50% 50%;
     grid-template-rows: 615px;
-    grid-template-areas: "cuadro imagen";
   }
-  .contacto-portada .contacto-portada-cuadro {
-    width: 100%;
-    height: 615px;
-    position: relative;
-    left: 30px;
-    bottom: 15px;
-    grid-area: cuadro;
-  }
-  .contacto-portada .contacto-portada-cuadro .contacto-portada-cuadro-texto {
-    width: 85%;
-    max-width: 570px;
-    height: 420px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .contacto-portada .contacto-portada-cuadro .contacto-portada-cuadro-texto h1 {
-    font-size: min(20px + 2.5vw, 62px);
-  }
-  .contacto-portada .contacto-portada-cuadro .contacto-portada-cuadro-texto p {
-    font-size: min(12px + 0.7vw, 22.6px);
-  }
-  .contacto-portada .contacto-portada-imagen {
-    width: 100%;
-    height: 615px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    bottom: 15px;
-    grid-area: imagen;
-  }
-  .contacto-portada .contacto-portada-imagen img {
-    width: 80%;
-    height: 80%;
+  .contacto-portada .contacto-portada-titulo .contacto-portada-titulo-h1 {
+    font-size: min(18px + 2vw, 58px);
+    width: 840px;
   }
 }
 /* ___ Segunda sección ___ */

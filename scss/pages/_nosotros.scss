@@ -20,67 +20,61 @@
     }
 
     .nosotros-portada-titulo{
-        width: 80%;
-        height: 100px;
+        width: 90%;
+        height: 170px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-    }
 
-    .nosotros-portada-titulo-h1{
+        .nosotros-portada-titulo-h1{
         display: inline-block;
         width: 300px;
         position: relative;
-        font-size: calc(20px + 6vw);
+        font-size: MIN(calc(22px + 1vw), 25.6px);
         font-weight: bold;
         color: white;
         text-align: center;
-    } 
+        } 
+    }
 }
 
 /* nosotros sección 1 o portada media screen */
 
+@media screen and (min-width: 480px) {
+
+    .nosotros-portada{
+        height: 615px;
+        
+        .nosotros-portada-video{
+            height: 615px;
+        }
+
+        .nosotros-portada-titulo{
+
+            .nosotros-portada-titulo-h1{
+                font-size: calc(18px + 1.5vw);
+                width: 470px;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     .nosotros-portada{
-        height: 500px;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: 500px;
-        grid-template-areas: "cuadro imagen";
+        height: 615px;
         
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-
-        .nosotros-portada-cuadro {
-            width:100%;
-            height: 80%;
-            grid-area: cuadro;
-
-            .nosotros-portada-cuadro-texto{
-                width: 80%;
-                max-width: 400px;
-                padding: 20px;
-
-                & h1{
-                    font-size: MIN(calc(18px + 2vw), 36.35px);
-                    margin: 10px 0px
-                }
-
-                & p{
-                    font-size: MIN(calc(12px + 0.5vw), 16.58px);
-                    margin: 10px 0px
-                }
-            }
+        .nosotros-portada-video{
+            height: 615px;
         }
 
-        .nosotros-portada-imagen{
-            width:100%;
-            height: 85%;
-            grid-area: imagen;
+        .nosotros-portada-titulo{
+
+            .nosotros-portada-titulo-h1{
+                font-size: calc(18px + 1.5vw);
+                width: 550px;
+            }
         }
     }
 }
@@ -91,23 +85,11 @@
         height: 615px;
         grid-template-rows: 615px;
 
-        .nosotros-portada-cuadro{
-            height:100%;
+        .nosotros-portada-titulo{
 
-            .nosotros-portada-cuadro-texto{
-                width: 80%;
-                max-width: 500px;
-                border: 4px $color-gris solid;
-                padding: 40px;
-    
-                & h1{
-                    font-size: MIN(calc(18px + 2vw), 50.35px);
-                    margin: 15px 0px;
-                }
-    
-                & p{
-                    font-size: MIN(calc(12px + 0.75vw), 25.6px);
-                }
+            .nosotros-portada-titulo-h1{
+                font-size: MIN(18px + 2vw, 58px);
+                width: 840px;
             }
         }
     }
@@ -649,6 +631,7 @@
             color: #404040;
             font-weight: 500;
             border-color: $color-amarillo;
+            background-color: $color-amarillo;
             border-style: solid;
             margin-bottom: 30px;
             transition: 1s;
@@ -657,7 +640,8 @@
         }
 
         & a:hover{
-            background-color: $color-amarillo;
+            background-color: $color-gris;
+            color: $color-amarillo;
         }
     }
 }

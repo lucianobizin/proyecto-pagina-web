@@ -90,7 +90,7 @@ header .boton-header label .logo-menu {
   width: 80%;
   height: 80%;
   object-fit: cover;
-  padding: 5px;
+  padding: 17px;
 }
 header .boton-header .menu-desplegable {
   background-color: #ffc72c;
@@ -151,6 +151,11 @@ header .boton-header input:checked ~ .menu-desplegable .menu-desplegable-texto:h
     object-fit: contain;
     padding: 10px;
   }
+  header .boton-header label .logo-menu {
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+  }
   header .boton-header input:checked ~ .menu-desplegable {
     gap: 5px;
     z-index: 2;
@@ -158,7 +163,7 @@ header .boton-header input:checked ~ .menu-desplegable .menu-desplegable-texto:h
 }
 @media screen and (min-width: 768px) {
   header {
-    grid-template-columns: 20% 50% 5% 5% 20%;
+    grid-template-columns: 20% 40% 10% 10% 20%;
     grid-template-rows: 10vh;
   }
   header h1 {
@@ -184,6 +189,7 @@ header .boton-header input:checked ~ .menu-desplegable .menu-desplegable-texto:h
 }
 @media screen and (min-width: 1200px) {
   header {
+    grid-template-columns: 20% 50% 5% 5% 20%;
     grid-template-rows: 15vh;
   }
   header .header-logo .header-logo-img {
@@ -194,14 +200,6 @@ header .boton-header input:checked ~ .menu-desplegable .menu-desplegable-texto:h
   }
   header .boton-header {
     height: 15vh;
-  }
-  header .boton-header label .logo-menu {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    bottom: 2.5px;
-    padding: 10px;
   }
   header .boton-header .menu-desplegable {
     height: 615px;

@@ -4255,7 +4255,7 @@ footer .footer-copyright p {
 /* ___ Tercera sección ___ */
 .contacto-seccion-3 {
   width: 100%;
-  height: 940px;
+  height: 920px;
 }
 .contacto-seccion-3 .contacto-seccion-3-imagen {
   width: 100%;
@@ -4269,7 +4269,7 @@ footer .footer-copyright p {
 }
 .contacto-seccion-3 .contacto-seccion-3-formulario {
   width: 100%;
-  height: 640px;
+  height: 620px;
   background-color: #ffc72c;
   display: flex;
   flex-direction: column;
